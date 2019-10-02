@@ -353,8 +353,9 @@ template {
 }
 
 body {
-  background: url("/background.42599997.svg") center/cover no-repeat;
+  background-image: linear-gradient(to bottom, #000000, #16282B);
   font-family: "Roboto", sans-serif;
+  height: 9999px;
 }
 
 .container {
@@ -366,7 +367,7 @@ body {
 }
 
 button {
-  outline: none;
+  outline: none !important;
 }
 
 a {
@@ -376,10 +377,6 @@ a {
 
 a:hover {
   text-decoration: underline;
-}
-
-li {
-  list-style-type: none;
 }
 
 ::placeholder {
@@ -412,6 +409,7 @@ li {
 }
 .main-menu li {
   margin-left: 58px;
+  list-style-type: none;
 }
 
 .righted {
@@ -470,7 +468,7 @@ header {
   letter-spacing: 0;
 }
 
-.header-item__description {
+.keto-item__description {
   max-width: 660px;
   margin-top: 184px;
   font-family: PTSans-Regular;
@@ -481,7 +479,7 @@ header {
   line-height: 32px;
 }
 
-.header-keto-items {
+.keto-items {
   display: flex;
   justify-content: space-around;
   width: 100%;
@@ -497,9 +495,19 @@ header {
   padding: 23px 0 19px 0;
 }
 
-.keto-item:hover {
+.green:hover {
   border: 1px solid #A2E670;
   box-shadow: 0 0 34px 0 rgba(162, 230, 112, 0.5);
+}
+
+.orange:hover {
+  border: 1px solid #F9C770;
+  box-shadow: 0 0 34px 0 rgba(249, 199, 112, 0.5);
+}
+
+.blue:hover {
+  border: 1px solid #4D86FB;
+  box-shadow: 0 0 34px 0 rgba(77, 134, 251, 0.5);
 }
 
 .keto-item__title {
@@ -511,6 +519,154 @@ header {
 .keto-item__subtitle {
   font-family: PTSans-Regular;
   font-size: 15px;
+  letter-spacing: 0;
+}
+
+.fit,
+.balance,
+.sport {
+  margin-top: 130px;
+  color: #ffffff;
+}
+
+.dish-wrapper {
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+}
+
+.dish-title {
+  font-family: Helvetica;
+  font-size: 40px;
+  letter-spacing: 0;
+}
+
+.dish-ratio {
+  margin-top: 16px;
+  font-family: PTSans-Regular;
+  font-size: 15px;
+  letter-spacing: 0;
+}
+
+.dish-dots {
+  display: flex;
+  margin-top: 28px;
+}
+
+.fit-dot,
+.balance-dot,
+.sport-dot {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+}
+
+.fit-dot:not(:first-child),
+.balance-dot:not(:first-child),
+.sport-dot:not(:first-child) {
+  margin-left: 10px;
+}
+
+.fit-dot.color {
+  background: #A2E670;
+}
+
+.fit-dot.uncolor,
+.balance-dot.uncolor {
+  border: 1px solid #D8D8D8;
+}
+
+.balance-dot.color {
+  background: #F9C770;
+}
+
+.sport-dot.color {
+  background: #4D86FB;
+}
+
+.dish-description {
+  margin-top: 30px;
+  font-family: PTSans-Regular;
+  font-size: 20px;
+  letter-spacing: 0;
+}
+
+ul.dish-ul {
+  margin-left: -37px;
+  font-family: PTSans-Regular;
+  font-size: 20px;
+  letter-spacing: 0;
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+button.dayratio,
+.order {
+  width: 100%;
+  margin-top: 30px;
+  padding: 23px 105px;
+  opacity: 0.3;
+  background: #3F484A;
+  border: none;
+  border-radius: 50px;
+  font-family: PTSans-Regular;
+  font-size: 16px;
+  color: #FFFFFF;
+  letter-spacing: 0;
+  text-align: center;
+  line-height: 32px;
+  cursor: pointer;
+}
+
+button.dayratio:hover,
+.order:hover {
+  opacity: 0.77;
+  background: #50B02C;
+  color: #ffffff;
+}
+
+.dish-card {
+  max-width: 400px;
+  min-height: 670px;
+  margin-top: 30px;
+  border-radius: 40px;
+  background: #FFFFFF;
+  box-shadow: 0 9px 12px 0 #000000;
+  color: #303030;
+}
+
+.dish-card__photo {
+  width: 100%;
+  border-bottom: none;
+}
+.dish-card__photo img {
+  width: 100%;
+  border-radius: 40px 40px 0 0;
+}
+
+.dish-card__text {
+  padding: 40px 46px;
+}
+
+.card__text-title {
+  font-family: Helvetica;
+  font-size: 25px;
+  letter-spacing: 0;
+  font-weight: bold;
+}
+
+.card__text-description {
+  max-width: 304px;
+  margin-top: 32px;
+  font-family: PTSans-Regular;
+  font-size: 15px;
+  letter-spacing: 0;
+}
+
+.card__text-size {
+  margin-top: 30px;
+  font-family: PTSans-Regular;
+  font-size: 20px;
   letter-spacing: 0;
 }
 

@@ -1,0 +1,163 @@
+.fit,
+.balance,
+.sport {
+    margin-top: 130px;
+    color: $white;
+}
+
+.dish-wrapper {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+
+}
+
+.dish-left {
+    // max-width: 400px;
+}
+
+.dish-title {
+    font-family: Helvetica;
+    font-size: 40px;
+    letter-spacing: 0;
+}
+
+.dish-ratio {
+    margin-top: 16px;
+    font-family: PTSans-Regular;
+    font-size: 15px;
+    letter-spacing: 0;
+}
+
+
+.dish-dots {
+    display: flex;
+    margin-top: 28px;
+}
+
+.fit-dot,
+.balance-dot,
+.sport-dot {
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+
+}
+
+.fit-dot:not(:first-child),
+.balance-dot:not(:first-child),
+.sport-dot:not(:first-child) {
+    margin-left: 10px;
+}
+
+.fit-dot.color {
+    background: #A2E670;
+}
+
+.fit-dot.uncolor,
+.balance-dot.uncolor {
+    border: 1px solid #D8D8D8;
+}
+
+.balance-dot.color {
+    background: #F9C770;
+}
+
+.sport-dot.color {
+    background: #4D86FB;
+}
+
+
+.dish-description {
+    margin-top: 30px;
+    font-family: PTSans-Regular;
+    font-size: 20px;
+    letter-spacing: 0;
+}
+
+ul.dish-ul {
+    margin-left: -37px;
+    font-family: PTSans-Regular;
+    font-size: 20px;
+    letter-spacing: 0;
+    margin-top: 0;
+    margin-bottom: 0;
+
+}
+
+button.dayratio,
+.order {
+    width: 100%;
+    margin-top: 30px;
+    padding: 23px 105px;
+    opacity: 0.3;
+    background: #3F484A;
+    border: none;
+    border-radius: 50px;
+    font-family: PTSans-Regular;
+    font-size: 16px;
+    color: #FFFFFF;
+    letter-spacing: 0;
+    text-align: center;
+    line-height: 32px;
+    cursor: pointer;
+}
+
+button.dayratio:hover,
+.order:hover {
+    opacity: 0.77;
+    background: #50B02C;
+    color: $white;
+}
+
+.dish-card {
+    max-width: 400px;
+    min-height: 670px;
+    margin-top: 30px;
+    border-radius: 40px;
+    background: #FFFFFF;
+    box-shadow: 0 9px 12px 0 #000000;
+    color: $black;
+}
+
+.dish-card__photo {
+    width: 100%;
+    border-bottom: none;
+
+
+
+    img {
+        width: 100%;
+        border-radius: 40px 40px 0 0;
+
+    }
+}
+
+.dish-card__text {
+    padding: 40px 46px;
+}
+
+.card__text-title {
+    font-family: Helvetica;
+    font-size: 25px;
+    letter-spacing: 0;
+    font-weight: bold;
+}
+
+.card__text-description {
+    max-width: 304px;
+    margin-top: 32px;
+    font-family: PTSans-Regular;
+    font-size: 15px;
+    letter-spacing: 0;
+}
+
+.card__text-size {
+    margin-top: 30px;
+    font-family: PTSans-Regular;
+    font-size: 20px;
+    letter-spacing: 0;
+}
+
+
+button.order {}

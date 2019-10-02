@@ -33,28 +33,269 @@ block content
       .header-forget
         | Забудь о том, что надо готовить.   
       .header-easy 
-        | Просто. Ешь. Больше. Жиров.   
-      .header-item__description
-        | Основываясь на последних открытиях диетологии и собственном опыте, мы разработали три вида кето-рационов: 
-      .header-keto-items
-        .keto-item
-          .keto-item__title
-            | FIT
-          .keto-item__subtitle
-            | 1300 ккал/день 
+        | Просто. Ешь. Больше. Жиров. 
+      .keto-item__description
+        | Основываясь на последних открытиях диетологии и собственном опыте, мы разработали три вида кето-рационов:   
+  section.keto-ration
+    
+    .keto-items
+      .keto-item.green
+        .keto-item__title
+          | FIT
+        .keto-item__subtitle
+          | 1300 ккал/день 
 
-        .keto-item
-          .keto-item__title
-            | BALANCE
-          .keto-item__subtitle
-            | 2000 ккал/день  
+      .keto-item.orange
+        .keto-item__title
+          | BALANCE
+        .keto-item__subtitle
+          | 2000 ккал/день  
 
-        .keto-item
-          .keto-item__title
-            | SPORT
-          .keto-item__subtitle
-            | 2500 ккал/день         
+      .keto-item.blue
+        .keto-item__title
+          | SPORT
+        .keto-item__subtitle
+          | 2500 ккал/день 
+
+  section.fit
+    .container
+      .dish-wrapper
+        .dish-left
+          .dish-declaration
+            .dish-title
+              | FIT
+            .dish-ratio
+              | рацион, 1300 ккал/день  
+            
+            .dish-dots
+              .fit-dot.color  
+              .fit-dot.color  
+              .fit-dot.color  
+              .fit-dot.uncolor  
+              .fit-dot.uncolor  
+            .dish-description
+              | Включает 2 приёма пищи в день. 
+              | <br> Он для тебя, если ты:
+            ul.dish-ul
+              li
+                | хочешь похудеть; 
+              li
+                | давно в "кетозе" и знаешь, что нужно
+                | <br>твоему организму;
+              li
+                | ведешь малоактивный образ жизни.
+            button.dayratio 
+              | Пример рациона на 1 день  
+
+          .dish-card
+            .dish-card__photo
+              img(src="../src/images/dishes/fit_02.png")
+            .dish-card__text
+              .card__text-title
+                | Фахитос боул с курицей
+              .card__text-description
+                | Куриный окорочок, микс салатов, томаты 
+                | черри, авокадо, кинза, лук репчатый красный, 
+                | перец болгарский, масло сливочное, сыр 
+                | чеддер, сметана, смесь T-mex   
+              .card__text-size
+                | КБЖУ: 862/41/71/9, 350 гр   
 
 
+                  
 
+        .dish-right 
+          .dish-card
+            .dish-card__photo
+              img(src="../src/images/dishes/fit_01.png")
+            .dish-card__text
+              .card__text-title
+                | Греческий суп 
+                | с курицей
+              .card__text-description
+                | Куриный окорочок, рис из цветной 
+                | капусты, масло сливочное, яйца куриные, 
+                | сок лимона, петрушка, тимьян 
+              .card__text-size
+                | КБЖУ:620/27/54/5, 370 гр 
+          button.order
+            | Перейти к заказу
+
+  section.balance
+    .container
+      .dish-wrapper
+        .dish-left
+          .dish-declaration
+            .dish-title
+              | BALANCE
+            .dish-ratio
+              | рацион, 2000 ккал/день  
+            
+            .dish-dots
+              .balance-dot.color  
+              .balance-dot.color  
+              .balance-dot.color  
+              .balance-dot.color  
+              .balance-dot.uncolor  
+            .dish-description
+              | Включает 3 приёма пищи в день. 
+              | <br> Он для тебя, если ты:
+            ul.dish-ul
+              li
+                | хочешь просто питаться каждый день 
+                | <br>без хлопот; 
+              li
+                | только присоединился к кето;
+              li
+                | ведешь умеренную активность.
+            button.dayratio 
+              | Пример рациона на 1 день  
+
+          .dish-card
+            .dish-card__photo
+              img(src="../src/images/dishes/balance_01.png")
+            .dish-card__text
+              .card__text-title
+                | Суп гуляш
+              .card__text-description
+                | Состав: мраморная говядина, лук репчатый 
+                | красный, чеснок, корень сельдерея, перец 
+                | болгарский, масло оливковое, томаты, 
+                | морковь, петрушка, паприка, орегано, 
+                | кайенский перец, тмин, сметана  
+              .card__text-size
+                | КБЖУ: 485/16/41/11, 445 гр 
+          button.order
+            | Перейти к заказу   
+
+
+                  
+
+        .dish-right 
+          .dish-card
+            .dish-card__photo
+              img(src="../src/images/dishes/balance_03.png")
+            .dish-card__text
+              .card__text-title
+                | Салат с беконом 
+                | и курицей
+              .card__text-description
+                | Куриный окорочок, бекон, микс салатов, 
+                | томаты черри, майонез домашний, масло 
+                | сливочное
+              .card__text-size
+                | КБЖУ: 837/28/78/4, 230 гр
+          
+
+          .dish-card
+            .dish-card__photo
+              img(src="../src/images/dishes/balance_02.png")
+            .dish-card__text
+              .card__text-title
+                | Кето-тако из курицы
+              .card__text-description
+                | Куриный окорочок, яйца куриные, смесь T-
+                | mex, масло оливковое, сыр чеддер, сальса 
+                | (томаты, сок лайма, кинза, чеснок, масло 
+                | льняное), авокадо, лук репчатый красный, 
+                | сметана, халапеньо
+              .card__text-size
+                | КБЖУ: 872/31/69/10, 295 гр
+                     
+  section.sport
+    .container
+      .dish-wrapper
+        .dish-left
+          .dish-declaration
+            .dish-title
+              | SPORT
+            .dish-ratio
+              | рацион, 2500 ккал/день  
+            
+            .dish-dots
+              .sport-dot.color  
+              .sport-dot.color  
+              .sport-dot.color  
+              .sport-dot.color  
+              .sport-dot.color
+            .dish-description
+              | Включает 3 приёма пищи в день. 
+              | <br> Он для тебя, если ты:
+            ul.dish-ul
+              li
+                | активно работаешь над своим телом;
+              li
+                | не считаешь калории, потому что это 
+                | <br>тебе не нужно;
+              li
+                | думаешь, что десерты — это 
+                | <br> неизменный элемент дневного рациона 
+            button.dayratio 
+              | Пример рациона на 1 день  
+
+          .dish-card
+            .dish-card__photo
+              img(src="../src/images/dishes/sport_01.png")
+            .dish-card__text
+              .card__text-title
+                | Суп гуляш
+              .card__text-description
+                | Состав: мраморная говядина, лук репчатый 
+                | красный, чеснок, корень сельдерея, перец 
+                | болгарский, масло оливковое, томаты, 
+                | морковь, петрушка, паприка, орегано, 
+                | кайенский перец, тмин, сметана  
+              .card__text-size
+                | КБЖУ: 485/16/41/11, 445 гр 
+
+          .dish-card
+            .dish-card__photo
+              img(src="../src/images/dishes/sport_04.png")
+            .dish-card__text
+              .card__text-title
+                | Суп гуляш
+              .card__text-description
+                | Состав: мраморная говядина, лук репчатый 
+                | красный, чеснок, корень сельдерея, перец 
+                | болгарский, масло оливковое, томаты, 
+                | морковь, петрушка, паприка, орегано, 
+                | кайенский перец, тмин, сметана  
+              .card__text-size
+                | КБЖУ: 485/16/41/11, 445 гр 
+
+                  
+
+        .dish-right 
+          .dish-card
+            .dish-card__photo
+              img(src="../src/images/dishes/sport_02.png")
+            .dish-card__text
+              .card__text-title
+                | Скрембл
+              .card__text-description
+                | Яйца куриные, масло сливочное, лук 
+                | зеленый, халапеньо, томаты, сыр чеддер
+              .card__text-size
+                | КБЖУ: 403/26/30/3, 255 гр
+          
+
+          .dish-card
+            .dish-card__photo
+              img(src="../src/images/dishes/sport_03.png")
+            .dish-card__text
+              .card__text-title
+                | Кето-тако из курицы
+              .card__text-description
+                | Куриный окорочок, яйца куриные, смесь T-
+                | mex, масло оливковое, сыр чеддер, сальса 
+                | (томаты, сок лайма, кинза, чеснок, масло 
+                | льняное), авокадо, лук репчатый красный, 
+                | сметана, халапеньо
+              .card__text-size
+                | КБЖУ: 872/31/69/10, 295 гр
+          button.order
+            | Перейти к заказу                             
+
+
+  
 

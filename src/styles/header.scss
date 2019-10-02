@@ -54,7 +54,7 @@ header {
     letter-spacing: 0;
 }
 
-.header-item__description {
+.keto-item__description {
     max-width: 660px;
     margin-top: 184px;
     font-family: PTSans-Regular;
@@ -63,37 +63,5 @@ header {
     letter-spacing: 0;
     text-align: center;
     line-height: 32px;
-}
 
-.header-keto-items {
-    display: flex;
-    justify-content: space-around;
-    width: 100%;
-    margin-top: 101px;
-    color: $white;
-    text-align: center;
-}
-
-.keto-item {
-    width: 300px;
-    background: #383A39;
-    border-radius: 62px;
-    padding: 23px 0 19px 0;
-}
-
-.keto-item:hover {
-    border: 1px solid #A2E670;
-    box-shadow: 0 0 34px 0 rgba(162, 230, 112, 0.50);
-}
-
-.keto-item__title {
-    font-family: Helvetica;
-    font-size: 40px;
-    letter-spacing: 0;
-}
-
-.keto-item__subtitle {
-    font-family: PTSans-Regular;
-    font-size: 15px;
-    letter-spacing: 0;
 }
