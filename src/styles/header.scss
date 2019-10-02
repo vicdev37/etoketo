@@ -1,0 +1,99 @@
+header {
+    background: url('../images/header-bg.png') center/cover no-repeat;
+    // min-height: 100vh;
+    padding-top: 100px;
+    background-position-y: 1%;
+
+}
+
+.header-logo {
+    margin: 35px auto;
+}
+
+.header-presents {
+    color: $white;
+    margin-top: 22px;
+}
+
+.header-title {
+    h1 {
+        margin: 0;
+        color: $white;
+        font-family: Helvetica;
+        font-size: 150px;
+        letter-spacing: -4.49px;
+        text-align: center;
+    }
+}
+
+.header-description {
+    margin-top: 93px;
+    font-family: PTSans-Regular;
+    font-size: 20px;
+    color: $white;
+    letter-spacing: 0;
+}
+
+.header-arrow {
+    margin-top: 106px;
+}
+
+.header-forget {
+    margin-top: 234px;
+    font-family: PTSans-Regular;
+    font-size: 20px;
+    color: $white;
+    letter-spacing: 0;
+}
+
+.header-easy {
+    margin-top: 15px;
+    font-family: PTSans-Bold;
+    font-size: 60px;
+    color: $white;
+    letter-spacing: 0;
+}
+
+.header-item__description {
+    max-width: 660px;
+    margin-top: 184px;
+    font-family: PTSans-Regular;
+    font-size: 20px;
+    color: $white;
+    letter-spacing: 0;
+    text-align: center;
+    line-height: 32px;
+}
+
+.header-keto-items {
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+    margin-top: 101px;
+    color: $white;
+    text-align: center;
+}
+
+.keto-item {
+    width: 300px;
+    background: #383A39;
+    border-radius: 62px;
+    padding: 23px 0 19px 0;
+}
+
+.keto-item:hover {
+    border: 1px solid #A2E670;
+    box-shadow: 0 0 34px 0 rgba(162, 230, 112, 0.50);
+}
+
+.keto-item__title {
+    font-family: Helvetica;
+    font-size: 40px;
+    letter-spacing: 0;
+}
+
+.keto-item__subtitle {
+    font-family: PTSans-Regular;
+    font-size: 15px;
+    letter-spacing: 0;
+}

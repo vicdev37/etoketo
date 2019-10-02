@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="1024px" height="7608px" viewBox="0 0 1024 7608" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 58 (84663) - https://sketch.com -->
+    <title>Rectangle Copy 3</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <linearGradient x1="50.0000017%" y1="9.46815839%" x2="50.0000017%" y2="99.666049%" id="linearGradient-1">
+            <stop stop-color="#060807" stop-opacity="0" offset="0%"></stop>
+            <stop stop-color="#060807" offset="3.86903501%"></stop>
+            <stop stop-color="#060807" offset="44.2488387%"></stop>
+            <stop stop-color="#16282B" offset="98.6603756%"></stop>
+            <stop stop-color="#16282B" stop-opacity="0" offset="99.9736064%"></stop>
+        </linearGradient>
+    </defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="1024_1" transform="translate(0.000000, -1034.000000)" fill="url(#linearGradient-1)">
+            <rect id="Rectangle-Copy-3" x="0" y="235" width="1024" height="8439"></rect>
+        </g>
+    </g>
+</svg>

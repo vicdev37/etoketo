@@ -1,0 +1,39 @@
+{
+  "name": "parcel-grid",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "parcel ./pug/index.pug",
+    "deploy": "push-dir --dir=dist --branch=gh-pages --cleanup",
+    "build": "rm -rf dist && parcel build ./pug/index.pug parcel --public-url ./"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@babel/plugin-transform-runtime": "^7.5.5",
+    "babel-core": "^6.26.3",
+    "babel-loader": "^8.0.6",
+    "babel-polyfill": "^6.26.0",
+    "babel-preset-env": "^1.7.0",
+    "babel-preset-es2015": "^6.24.1",
+    "babel-preset-stage-0": "^6.24.1",
+    "cssnano": "^4.1.10",
+    "parcel-bundler": "^1.12.3",
+    "pug": "^2.0.4",
+    "push-dir": "^0.4.1",
+    "sass": "^1.19.0"
+  },
+  "dependencies": {
+    "@babel/runtime": "^7.5.5",
+    "autoprefixer": "^9.5.1",
+    "jquery": "^3.4.0",
+    "mongodb": "^3.3.0",
+    "nodemon": "^1.19.1",
+    "normalize.css": "^8.0.1",
+    "postcss-modules": "^1.4.1",
+    "sweetalert2": "^8.16.2"
+  }
+}
