@@ -18904,6 +18904,35 @@ require("babel-polyfill");
 var jquery = require("jquery");
 
 window.$ = window.jQuery = jquery;
+$(document).ready(function () {
+  var menu = $('.menu-nav')[0];
+  var menuHeight = menu.offsetHeight;
+  var lastPageYOffset = pageYOffset;
+  var transform = 0;
+  window.addEventListener('scroll', function (evt) {
+    if (lastPageYOffset <= pageYOffset && pageYOffset > 600) {
+      if (transform <= menuHeight) {
+        transform = transform + (pageYOffset - lastPageYOffset);
+      } else {
+        transform = menuHeight;
+      }
+
+      menu.style.transform = "translateY(-".concat(transform, "px)");
+    } else if (lastPageYOffset >= pageYOffset) {
+      if (transform >= 0) {
+        transform = transform - (lastPageYOffset - pageYOffset);
+
+        if (transform < 0) {
+          transform = 0;
+        }
+      }
+
+      menu.style.transform = "translateY(-".concat(transform, "px)");
+    }
+
+    lastPageYOffset = pageYOffset;
+  });
+});
 },{"jquery":"../node_modules/jquery/dist/jquery.js","babel-polyfill":"../node_modules/babel-polyfill/lib/index.js"}],"../node_modules/parcel-bundler/src/builtins/hmr-runtime.js":[function(require,module,exports) {
 var global = arguments[3];
 var OVERLAY_ID = '__parcel__error__overlay__';
@@ -18932,7 +18961,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "58557" + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "63267" + '/');
 
   ws.onmessage = function (event) {
     checkedAssets = {};
