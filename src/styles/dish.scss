@@ -9,7 +9,9 @@
     width: 100%;
     display: flex;
     justify-content: space-around;
-
+    flex-flow: row wrap;
+    padding-left: 25px;
+    padding-right: 25px;
 }
 
 .dish-left {
@@ -159,5 +161,32 @@ button.dayratio:hover,
     letter-spacing: 0;
 }
 
+.socials-hidden {
+    display: none;
+    max-width: 320px;
+    height: 120px;
+    background: #3F484A;
+    // opacity: 0.3;
+    border-radius: 40px;
+    padding: 17px 34px;
+}
 
-button.order {}
+.socials-hidden__title {
+    font-family: PTSans-Regular;
+    font-size: 16px;
+    letter-spacing: 0;
+    text-align: center;
+    // line-height: 32px;
+}
+
+.socials-hidden__icons {
+    margin-top: 15px;
+    text-align: center;
+
+    img:not(:first-child) {
+        margin-left: 20px;
+    }
+}
+
+
+@media (max-width: 428px) {}

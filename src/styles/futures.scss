@@ -1,0 +1,34 @@
+.futures {
+    margin-top: 150px;
+    color: $white;
+}
+
+.futures-subtitle {
+    font-family: PTSans-Regular;
+    font-size: 20px;
+    letter-spacing: 0;
+}
+
+.futures-title {
+    margin-top: 15px;
+    font-family: PTSans-Bold;
+    font-size: 60px;
+    letter-spacing: 0;
+}
+
+.futures-wrapper {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+    margin-top: 100px;
+    align-items: baseline;
+}
+
+.futures-item {
+    max-width: 260px;
+}
+
+.futures-item__text {
+    margin-top: 60px;
+}

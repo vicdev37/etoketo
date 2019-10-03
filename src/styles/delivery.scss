@@ -1,0 +1,32 @@
+.delivery {
+    margin-top: 130px;
+    color: $white;
+    letter-spacing: 0;
+    text-align: center;
+}
+
+.delivery-subtitle {
+    font-family: PTSans-Regular;
+    font-size: 20px;
+}
+
+.delivery-title {
+    margin-top: 15px;
+    font-family: PTSans-Bold;
+    font-size: 60px;
+}
+
+.delivery-wrapper {
+    margin-top: 111px;
+    display: flex;
+    justify-content: space-around;
+    align-items: baseline;
+}
+
+.delivery-item {
+    max-width: 260px;
+}
+
+.delivery-item__description {
+    margin-top: 60px;
+}

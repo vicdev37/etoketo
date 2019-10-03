@@ -32,6 +32,7 @@ header {
     font-size: 20px;
     color: $white;
     letter-spacing: 0;
+    text-align: center;
 }
 
 .header-arrow {
@@ -52,6 +53,7 @@ header {
     font-size: 60px;
     color: $white;
     letter-spacing: 0;
+    text-align: center;
 }
 
 .keto-item__description {
@@ -64,4 +66,55 @@ header {
     text-align: center;
     line-height: 32px;
 
+}
+
+
+@media (max-width: 768px) {
+    .header-easy {
+        font-size: 46px;
+    }
+}
+
+
+@media (max-width: 656px) {
+    .header-title {
+        h1 {
+            font-size: 106px;
+        }
+
+    }
+
+    .header-easy {
+        font-size: 33px;
+    }
+
+    .keto-item__description {
+        font-size: 16px;
+    }
+}
+
+@media (max-width: 444px) {
+    .header-title {
+        h1 {
+            font-size: 70px;
+        }
+
+    }
+
+    .header-description {
+        font-size: 17px;
+    }
+
+    .header-forget {
+        font-size: 17px;
+    }
+
+    .header-easy {
+        font-size: 23px;
+    }
+
+    .keto-item__description {
+        font-size: 13px;
+        line-height: 20px;
+    }
 }

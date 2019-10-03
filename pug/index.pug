@@ -37,25 +37,25 @@ block content
       .keto-item__description
         | Основываясь на последних открытиях диетологии и собственном опыте, мы разработали три вида кето-рационов:   
   section.keto-ration
-    
-    .keto-items
-      .keto-item.green
-        .keto-item__title
-          | FIT
-        .keto-item__subtitle
-          | 1300 ккал/день 
+    .container  
+      .keto-items
+        .keto-item.green
+          .keto-item__title
+            | FIT
+          .keto-item__subtitle
+            | 1300 ккал/день 
 
-      .keto-item.orange
-        .keto-item__title
-          | BALANCE
-        .keto-item__subtitle
-          | 2000 ккал/день  
+        .keto-item.orange
+          .keto-item__title
+            | BALANCE
+          .keto-item__subtitle
+            | 2000 ккал/день  
 
-      .keto-item.blue
-        .keto-item__title
-          | SPORT
-        .keto-item__subtitle
-          | 2500 ккал/день 
+        .keto-item.blue
+          .keto-item__title
+            | SPORT
+          .keto-item__subtitle
+            | 2500 ккал/день 
 
   section.fit
     .container
@@ -120,6 +120,14 @@ block content
                 | КБЖУ:620/27/54/5, 370 гр 
           button.order
             | Перейти к заказу
+        .socials-hidden
+          .socials-hidden__title
+            | На любые вопросы ответим в чате:
+          .socials-hidden__icons
+            img(src="../src/images/tg-hidden.svg")          
+            img(src="../src/images/wapp-hidden.svg")          
+
+
 
   section.balance
     .container
@@ -201,6 +209,12 @@ block content
                 | сметана, халапеньо
               .card__text-size
                 | КБЖУ: 872/31/69/10, 295 гр
+        .socials-hidden
+          .socials-hidden__title
+            | На любые вопросы ответим в чате:
+          .socials-hidden__icons
+            img(src="../src/images/tg-hidden.svg")          
+            img(src="../src/images/wapp-hidden.svg")           
                      
   section.sport
     .container
@@ -294,7 +308,196 @@ block content
               .card__text-size
                 | КБЖУ: 872/31/69/10, 295 гр
           button.order
-            | Перейти к заказу                             
+            | Перейти к заказу 
+        .socials-hidden
+          .socials-hidden__title
+            | На любые вопросы ответим в чате:
+          .socials-hidden__icons
+            img(src="../src/images/tg-hidden.svg")          
+            img(src="../src/images/wapp-hidden.svg")        
+
+  section.futures 
+    .container
+      .futures-subtitle
+        | Сосредоточиться на себе
+      .futures-title
+        | Зачем заказывать рационы?
+      .futures-wrapper
+        .futures-item
+          img(src="../src/images/futures_1.svg") 
+          .futures-item__text  
+            | чтобы тратить время на что-то 
+            | приятное, а не на приготовление
+            | и походы в магазин                                     
+        .futures-item
+          img(src="../src/images/futures_2.svg")
+          .futures-item__text 
+            | чтобы генерить лучшие идеи, 
+            | а не вспоминать: «не забыл ли сделать 
+            | заказ, подходит ли еда под кето?»                                           
+        .futures-item  
+          img(src="../src/images/futures_3.svg") 
+          .futures-item__text  
+            | чтобы каждый день потреблять
+            |  разные блюда, а не думать, 
+            |  «чего бы такого поесть сегодня?»   
+
+  section.choose-card
+    .container
+      .choose-card__subtitle
+        | Для лучших результатов
+      .choose-card__title
+        | Выбери свой рацион
+      .choose-card__wrapper
+        .ratio-card.card-fit
+          .ratio-card__title
+            | FIT
+          .ratio-card__subtitle
+            | 1300 ккал/день
+          <hr>  
+          .ratio-card__prise
+            | 700р.
+          <hr>
+          .ratio-card__description
+            | стоимость дневного рациона
+            | при заказе на неделю
+          .prise-wrapper
+            .prise-description
+              | стоимость
+              | недельного 
+              | рациона 
+            .prise
+              | 4900р.
+          .prise-wrapper.mute
+            .prise-description
+              | стоимость
+              | 3-дневного 
+              | рациона 
+            .prise
+              | 2400р.        
+        .ratio-card.card-balance
+          .ratio-card__title
+            | BALANCE
+          .ratio-card__subtitle
+            | 2000 ккал/день
+          <hr>  
+          .ratio-card__prise
+            | 1000р.
+          <hr>
+          .ratio-card__description
+            | стоимость дневного рациона
+            | при заказе на неделю
+          .prise-wrapper
+            .prise-description
+              | стоимость
+              | недельного 
+              | рациона 
+            .prise
+              | 7000р.
+          .prise-wrapper.mute
+            .prise-description
+              | стоимость
+              | 3-дневного 
+              | рациона 
+            .prise
+              | 3600р.
+
+        .ratio-card.card-sport
+          .ratio-card__title
+            | SPORT
+          .ratio-card__subtitle
+            | 2500 ккал/день
+          <hr>  
+          .ratio-card__prise
+            | 1200р.
+          <hr>
+          .ratio-card__description
+            | стоимость дневного рациона
+            | при заказе на неделю
+          .prise-wrapper
+            .prise-description
+              | стоимость
+              | недельного 
+              | рациона 
+            .prise
+              | 8400р.
+          .prise-wrapper.mute
+            .prise-description
+              | стоимость
+              | 3-дневного 
+              | рациона 
+            .prise
+              | 4500р.
+      .choose-card_button        
+        button.order
+          | Перейти к заказу    
+
+  section.delivery
+    container
+      .delivery-subtitle
+        | Еда сама найдет тебя
+      .delivery-title
+        | Готовим и доставляем по СПБ
+      .delivery-wrapper
+        .delivery-item
+          img(src="../src/images/delivery_1.svg")
+          .delivery-item__description
+            | Оформи заказ по телефону или через 
+            | корзину на etoketo.ru и мы свяжемся 
+            | с тобой для уточнения деталей 
+        .delivery-item
+          img(src="../src/images/delivery_2.svg")
+          .delivery-item__description
+            | Наша еда хранится не более 3-х суток, 
+            | и для недельного рациона потребуется 
+            | больше одной доставки
+        .delivery-item
+          img(src="../src/images/delivery_3.svg")
+          .delivery-item__description
+            | Мы никогда не храним готовую еду
+            | и продукты, а готовим всё 
+            | исключительно под заказ.
+
+  footer 
+    .container
+      .footer-call
+        | Остались вопросы? 
+        | <br>Звони или пиши в мессенджеры по номеру
+      .footer-phone
+        a(href="tel: +79818223153") +7 981 8223153  
+      .footer-logo
+        img(src="../src/images/logo-big.svg") 
+      .footer-subtitle 
+        | Надеемся, слюнка уже потекла
+      .footer-title
+        | Всем кето!
+      .footer-socials__title
+        | Поделиться этой страницей с друзьями
+      .footer-socials__wrapper
+        img(src="../src/images/fb.svg")       
+        img(src="../src/images/vk.svg")       
+        img(src="../src/images/tg.svg")       
+        img(src="../src/images/wapp.svg") 
+      ul.footer-nav
+        li
+          a(href="#" ) Меню ЭтоКето
+        li  
+          a(href="#" ) О проекте
+        li  
+          a(href="#" ) Кетоблог
+      .footer-signature
+        | ЭтоКето, 2019. Санкт-Петербург.    
+
+
+
+
+
+
+
+
+
+
+
 
 
   

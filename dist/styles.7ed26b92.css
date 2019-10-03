@@ -379,6 +379,13 @@ a:hover {
   text-decoration: underline;
 }
 
+hr {
+  color: #303030;
+  border: none;
+  background-color: #303030;
+  height: 1px;
+}
+
 ::placeholder {
   font-family: Roboto;
   font-style: normal;
@@ -446,6 +453,7 @@ header {
   font-size: 20px;
   color: #ffffff;
   letter-spacing: 0;
+  text-align: center;
 }
 
 .header-arrow {
@@ -466,6 +474,7 @@ header {
   font-size: 60px;
   color: #ffffff;
   letter-spacing: 0;
+  text-align: center;
 }
 
 .keto-item__description {
@@ -479,9 +488,50 @@ header {
   line-height: 32px;
 }
 
+@media (max-width: 768px) {
+  .header-easy {
+    font-size: 46px;
+  }
+}
+@media (max-width: 656px) {
+  .header-title h1 {
+    font-size: 106px;
+  }
+
+  .header-easy {
+    font-size: 33px;
+  }
+
+  .keto-item__description {
+    font-size: 16px;
+  }
+}
+@media (max-width: 444px) {
+  .header-title h1 {
+    font-size: 70px;
+  }
+
+  .header-description {
+    font-size: 17px;
+  }
+
+  .header-forget {
+    font-size: 17px;
+  }
+
+  .header-easy {
+    font-size: 23px;
+  }
+
+  .keto-item__description {
+    font-size: 13px;
+    line-height: 20px;
+  }
+}
 .keto-items {
   display: flex;
   justify-content: space-around;
+  flex-flow: row wrap;
   width: 100%;
   margin-top: 101px;
   color: #ffffff;
@@ -522,6 +572,26 @@ header {
   letter-spacing: 0;
 }
 
+@media (max-width: 900px) {
+  .keto-item {
+    width: 250px;
+  }
+}
+@media (max-width: 768px) {
+  .keto-item {
+    width: 220px;
+  }
+}
+@media (max-width: 656px) {
+  .keto-item {
+    margin-top: 40px;
+  }
+}
+@media (max-width: 428px) {
+  .keto-item__title {
+    font-size: 30px;
+  }
+}
 .fit,
 .balance,
 .sport {
@@ -533,6 +603,9 @@ header {
   width: 100%;
   display: flex;
   justify-content: space-around;
+  flex-flow: row wrap;
+  padding-left: 25px;
+  padding-right: 25px;
 }
 
 .dish-title {
@@ -668,6 +741,275 @@ button.dayratio:hover,
   font-family: PTSans-Regular;
   font-size: 20px;
   letter-spacing: 0;
+}
+
+.socials-hidden {
+  display: none;
+  max-width: 320px;
+  height: 120px;
+  background: #3F484A;
+  border-radius: 40px;
+  padding: 17px 34px;
+}
+
+.socials-hidden__title {
+  font-family: PTSans-Regular;
+  font-size: 16px;
+  letter-spacing: 0;
+  text-align: center;
+}
+
+.socials-hidden__icons {
+  margin-top: 15px;
+  text-align: center;
+}
+.socials-hidden__icons img:not(:first-child) {
+  margin-left: 20px;
+}
+
+.futures {
+  margin-top: 150px;
+  color: #ffffff;
+}
+
+.futures-subtitle {
+  font-family: PTSans-Regular;
+  font-size: 20px;
+  letter-spacing: 0;
+}
+
+.futures-title {
+  margin-top: 15px;
+  font-family: PTSans-Bold;
+  font-size: 60px;
+  letter-spacing: 0;
+}
+
+.futures-wrapper {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  text-align: center;
+  margin-top: 100px;
+  align-items: baseline;
+}
+
+.futures-item {
+  max-width: 260px;
+}
+
+.futures-item__text {
+  margin-top: 60px;
+}
+
+.choose-card {
+  margin-top: 130px;
+}
+
+.choose-card__subtitle {
+  font-family: PTSans-Regular;
+  font-size: 20px;
+  letter-spacing: 0;
+  color: #ffffff;
+}
+
+.choose-card__title {
+  margin-top: 15px;
+  font-family: PTSans-Bold;
+  font-size: 60px;
+  color: #ffffff;
+  letter-spacing: 0;
+}
+
+.choose-card__wrapper {
+  display: flex;
+  justify-content: space-around;
+  width: 100%;
+  margin-top: 87px;
+  color: #303030;
+  letter-spacing: 0;
+}
+
+.ratio-card {
+  max-width: 300px;
+  border-radius: 62px;
+  padding: 33px 48px 53px 48px;
+}
+
+.ratio-card__title {
+  font-family: Helvetica;
+  font-size: 30px;
+  text-align: center;
+  font-weight: bold;
+}
+
+.ratio-card__subtitle {
+  font-family: PTSans-Regular;
+  font-size: 15px;
+  text-align: center;
+  margin-top: 18px;
+}
+
+.ratio-card__prise {
+  font-family: Helvetica;
+  font-size: 40px;
+  text-align: center;
+  font-weight: bold;
+}
+
+.ratio-card__description {
+  font-family: PTSans-Regular;
+  font-size: 15px;
+  text-align: center;
+  margin-top: 13px;
+}
+
+.prise-wrapper {
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 180px;
+  margin-top: 67px;
+}
+
+.prise-wrapper.mute {
+  opacity: 0.3;
+}
+
+.prise-description {
+  max-width: 82px;
+  font-family: PTSans-Regular;
+  font-size: 15px;
+  text-align: right;
+}
+
+.prise {
+  font-family: PTSans-Bold;
+  font-size: 20px;
+}
+
+.ratio-card.card-fit {
+  background: #DDFFC3;
+}
+
+.ratio-card.card-balance {
+  background: #FFDDA7;
+}
+
+.ratio-card.card-sport {
+  background: #A8F2FF;
+}
+
+.choose-card_button {
+  margin-left: auto;
+  margin-right: 74px;
+}
+.choose-card_button button {
+  padding: 19px 24px 19px 25px;
+}
+
+.delivery {
+  margin-top: 130px;
+  color: #ffffff;
+  letter-spacing: 0;
+  text-align: center;
+}
+
+.delivery-subtitle {
+  font-family: PTSans-Regular;
+  font-size: 20px;
+}
+
+.delivery-title {
+  margin-top: 15px;
+  font-family: PTSans-Bold;
+  font-size: 60px;
+}
+
+.delivery-wrapper {
+  margin-top: 111px;
+  display: flex;
+  justify-content: space-around;
+  align-items: baseline;
+}
+
+.delivery-item {
+  max-width: 260px;
+}
+
+.delivery-item__description {
+  margin-top: 60px;
+}
+
+footer {
+  height: 2157px;
+  margin-top: 30px;
+  color: #ffffff;
+  letter-spacing: 0;
+  text-align: center;
+  background: url("/footer_bg.69304878.png") center/cover no-repeat;
+}
+
+.footer-call {
+  max-width: 381px;
+  margin: auto;
+  margin-top: 90px;
+  font-family: PTSans-Regular;
+  font-size: 20px;
+}
+
+.footer-phone {
+  font-family: PTSans-Bold;
+  font-size: 60px;
+  margin-top: 15px;
+}
+
+.footer-logo {
+  margin-top: 200px;
+}
+
+.footer-subtitle {
+  margin-top: 200px;
+  font-family: PTSans-Regular;
+  font-size: 20px;
+}
+
+.footer-title {
+  margin-top: 15px;
+  font-family: PTSans-Bold;
+  font-size: 60px;
+}
+
+.footer-socials__title {
+  margin-top: 130px;
+  font-family: PTSans-Regular;
+  font-size: 15px;
+}
+
+.footer-socials__wrapper {
+  display: flex;
+  margin-top: 20px;
+}
+.footer-socials__wrapper img:not(:first-child) {
+  margin-left: 40px;
+}
+
+ul.footer-nav {
+  display: flex;
+  margin-top: 244px;
+  padding-left: 0;
+  list-style-type: none;
+}
+ul.footer-nav li:not(:first-child) {
+  margin-left: 50px;
+}
+
+.footer-signature {
+  margin-top: 29px;
+  opacity: 0.5;
+  font-family: PTSans-Regular;
+  font-size: 15px;
 }
 
 /*# sourceMappingURL=/styles.7ed26b92.css.map */

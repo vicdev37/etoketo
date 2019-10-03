@@ -1,0 +1,107 @@
+.choose-card {
+    margin-top: 130px;
+}
+
+.choose-card__subtitle {
+    font-family: PTSans-Regular;
+    font-size: 20px;
+    letter-spacing: 0;
+    color: $white;
+}
+
+.choose-card__title {
+    margin-top: 15px;
+    font-family: PTSans-Bold;
+    font-size: 60px;
+    color: $white;
+    letter-spacing: 0;
+}
+
+.choose-card__wrapper {
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+    margin-top: 87px;
+    color: $black;
+    letter-spacing: 0;
+}
+
+.ratio-card {
+    max-width: 300px;
+    border-radius: 62px;
+    padding: 33px 48px 53px 48px;
+}
+
+.ratio-card__title {
+    font-family: Helvetica;
+    font-size: 30px;
+    text-align: center;
+    font-weight: bold;
+}
+
+.ratio-card__subtitle {
+    font-family: PTSans-Regular;
+    font-size: 15px;
+    text-align: center;
+    margin-top: 18px;
+}
+
+.ratio-card__prise {
+    font-family: Helvetica;
+    font-size: 40px;
+    text-align: center;
+    font-weight: bold;
+}
+
+.ratio-card__description {
+    font-family: PTSans-Regular;
+    font-size: 15px;
+    text-align: center;
+    margin-top: 13px;
+}
+
+.prise-wrapper {
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 180px;
+    margin-top: 67px;
+}
+
+.prise-wrapper.mute {
+    opacity: 0.3;
+}
+
+.prise-description {
+    max-width: 82px;
+    font-family: PTSans-Regular;
+    font-size: 15px;
+    text-align: right;
+}
+
+.prise {
+    font-family: PTSans-Bold;
+    font-size: 20px;
+}
+
+.ratio-card.card-fit {
+    background: #DDFFC3;
+}
+
+.ratio-card.card-balance {
+    background: #FFDDA7;
+}
+
+.ratio-card.card-sport {
+    background: #A8F2FF;
+}
+
+.choose-card_button {
+    margin-left: auto;
+    margin-right: 74px;
+
+    button {
+        padding: 19px 24px 19px 25px;
+    }
+}

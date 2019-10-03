@@ -1,6 +1,7 @@
 .keto-items {
     display: flex;
     justify-content: space-around;
+    flex-flow: row wrap;
     width: 100%;
     margin-top: 101px;
     color: $white;
@@ -42,4 +43,31 @@
     font-family: PTSans-Regular;
     font-size: 15px;
     letter-spacing: 0;
+}
+
+@media (max-width: 900px) {
+
+    .keto-item {
+        width: 250px;
+    }
+}
+
+@media (max-width: 768px) {
+    .keto-item {
+        width: 220px;
+    }
+}
+
+@media (max-width: 656px) {
+    .keto-item {
+        margin-top: 40px;
+    }
+}
+
+
+@media (max-width: 428px) {
+    .keto-item__title {
+        font-size: 30px;
+    }
+
 }
