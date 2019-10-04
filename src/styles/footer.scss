@@ -70,3 +70,37 @@ ul.footer-nav {
     font-family: PTSans-Regular;
     font-size: 15px;
 }
+
+@media (max-width: 440px) {
+    .footer-call {
+        font-size: 16px;
+    }
+
+    .footer-phone {
+        font-size: 26px;
+    }
+
+    .footer-subtitle {
+        font-size: 16px;
+    }
+
+    .footer-title {
+        font-size: 26px;
+    }
+
+    .footer-socials__wrapper {
+        img:not(:first-child) {
+            margin-left: 20px;
+        }
+    }
+
+    ul.footer-nav {
+        flex-direction: column;
+
+        li:not(:first-child) {
+
+            margin-left: 0px;
+            margin-top: 16px;
+        }
+    }
+}

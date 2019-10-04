@@ -20,6 +20,7 @@
 .choose-card__wrapper {
     display: flex;
     justify-content: space-around;
+    flex-flow: row wrap;
     width: 100%;
     margin-top: 87px;
     color: $black;
@@ -30,6 +31,11 @@
     max-width: 300px;
     border-radius: 62px;
     padding: 33px 48px 53px 48px;
+    transition: 0.5s;
+}
+
+.ratio-card:hover {
+    transform: translateY(-2%);
 }
 
 .ratio-card__title {
@@ -103,5 +109,25 @@
 
     button {
         padding: 19px 24px 19px 25px;
+    }
+}
+
+@media (max-width: 918px) {
+    .ratio-card {
+        margin-top: 20px;
+    }
+}
+
+@media (max-width: 580px) {
+    .choose-card__wrapper {
+        margin-top: 16px;
+    }
+
+    .choose-card__title {
+        font-size: 23px;
+    }
+
+    .choose-card__subtitle {
+        font-size: 17px;
     }
 }

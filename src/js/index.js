@@ -10,25 +10,43 @@ $(document).ready(() => {
   let transform = 0
 
   window.addEventListener('scroll', (evt) => {
-      if ((lastPageYOffset <= pageYOffset) && (pageYOffset > 600)) {
-        if (transform <= menuHeight) {
-          transform = transform + (pageYOffset - lastPageYOffset)
-        } else {
-          transform = menuHeight
-        }
-        
-        menu.style.transform = `translateY(-${transform}px)`
-      } else if (lastPageYOffset >= pageYOffset) {
-        if (transform >= 0) {
-          transform = transform - (lastPageYOffset - pageYOffset)
-
-          if (transform < 0) {
-            transform = 0
-          }
-        }
-        menu.style.transform = `translateY(-${transform}px)`
+    if ((lastPageYOffset <= pageYOffset) && (pageYOffset > 600)) {
+      if (transform <= menuHeight) {
+        transform = transform + (pageYOffset - lastPageYOffset)
+      } else {
+        transform = menuHeight
       }
+
+      menu.style.transform = `translateY(-${transform}px)`
+    } else if (lastPageYOffset >= pageYOffset) {
+      if (transform >= 0) {
+        transform = transform - (lastPageYOffset - pageYOffset)
+
+        if (transform < 0) {
+          transform = 0
+        }
+      }
+      menu.style.transform = `translateY(-${transform}px)`
+    }
 
     lastPageYOffset = pageYOffset
   })
+
+  // menu
+  $('.menu-btn').on('click', function (e) {
+    e.preventDefault();
+    $('.main-menu').toggleClass('menu_active');
+
+
+
+  });
+
 })
+
+
+
+// $(".main-nav__li").click(function () {
+//   // $(".menu-btn").toggleClass('menu-btn_active');
+//   $(".main-nav__ul").toggleClass('menu_active');
+
+// });

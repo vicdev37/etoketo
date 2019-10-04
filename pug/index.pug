@@ -1,21 +1,24 @@
 extends layout/layout.pug
 
 block content
-  nav.menu-nav
-    ul(class="main-menu")
-      a(href='#')
-        img.logo(src="../src/images/logo.svg" alt="Logo") 
-      li
-        a(href="#" ) Рационы
-      li
-        a(href="#") Выгода
-      li
-        a(href="#") Стоимость
-      li
-        a(href="#") Доставка
-    span.righted
-      a(href="tel: +79818223153") +7 981 8223153 
-
+  section.menu
+    nav.menu-nav
+      ul(class="main-menu")
+        a(href='#')
+          img.logo(src="../src/images/logo.svg" alt="Logo") 
+        li
+          a(href="#" ) Рационы
+        li
+          a(href="#") Выгода
+        li
+          a(href="#") Стоимость
+        li
+          a(href="#") Доставка
+        span.righted
+          a(href="tel: +79818223153") +7 981 8223153 
+    <a href="#" class="menu-btn">
+    <span></span>
+    </a>
   header
     .container  
       .header-logo

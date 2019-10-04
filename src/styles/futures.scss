@@ -14,12 +14,14 @@
     font-family: PTSans-Bold;
     font-size: 60px;
     letter-spacing: 0;
+    text-align: center;
 }
 
 .futures-wrapper {
     width: 100%;
     display: flex;
     justify-content: space-between;
+    flex-flow: row wrap;
     text-align: center;
     margin-top: 100px;
     align-items: baseline;
@@ -31,4 +33,29 @@
 
 .futures-item__text {
     margin-top: 60px;
+}
+
+@media (max-width: 918px) {
+    .futures-wrapper {
+        justify-content: space-around;
+        margin-top: 10px;
+    }
+
+    .futures-item {
+        margin-top: 60px;
+    }
+
+    .futures-title {
+        font-size: 45px;
+    }
+}
+
+@media (max-width: 580px) {
+    .futures-title {
+        font-size: 23px;
+    }
+
+    .futures-subtitle {
+        font-size: 17px;
+    }
 }

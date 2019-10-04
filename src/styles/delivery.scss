@@ -20,6 +20,7 @@
     margin-top: 111px;
     display: flex;
     justify-content: space-around;
+    flex-flow: row wrap;
     align-items: baseline;
 }
 
@@ -29,4 +30,29 @@
 
 .delivery-item__description {
     margin-top: 60px;
+}
+
+
+@media (max-width: 918px) {
+    .delivery-wrapper {
+        margin-top: 46px;
+    }
+
+    .delivery-item {
+        margin-top: 42px;
+    }
+
+    .delivery-title {
+        font-size: 42px;
+    }
+}
+
+@media (max-width: 580px) {
+    .delivery-title {
+        font-size: 23px;
+    }
+
+    .delivery-subtitle {
+        font-size: 17px;
+    }
 }
