@@ -36,17 +36,17 @@ $(document).ready(() => {
   $('.menu-btn').on('click', function (e) {
     e.preventDefault();
     $('.main-menu').toggleClass('menu_active');
-
+    // document.body.style.overflow = 'hidden';
 
 
   });
-
-})
-
+});
 
 
-// $(".main-nav__li").click(function () {
-//   // $(".menu-btn").toggleClass('menu-btn_active');
-//   $(".main-nav__ul").toggleClass('menu_active');
 
-// });
+
+
+//  document.onclick = function () {
+//    let container = $('.main-menu');
+//    container.removeClass('menu_active');
+//  }

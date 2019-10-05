@@ -93,12 +93,13 @@
     }
 
     .main-menu {
-        // width: 80%;
         flex-direction: column;
         transform: translateX(100%);
         height: 100vh;
         background: #060808;
+        margin-top: auto;
         padding-left: 0;
+        padding-right: 15%;
         transition: 0.5s;
 
         li {
@@ -121,5 +122,6 @@
 
     .menu-nav {
         background: none;
+        box-shadow: none;
     }
 }

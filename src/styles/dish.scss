@@ -188,4 +188,9 @@ button.dayratio:hover,
 }
 
 
-@media (max-width: 428px) {}
+@media (max-width: 690px) {
+    .socials-hidden {
+        display: block;
+        margin-top: 60px;
+    }
+}
