@@ -7,18 +7,21 @@ block content
         a(href='#')
           img.logo(src="../src/images/logo.svg" alt="Logo") 
         li
-          a(href="#" ) Рационы
+          a(href="#rations" class="menu-link") Рационы
         li
-          a(href="#") Выгода
+          a(href="#benefit" class="menu-link") Выгода
         li
-          a(href="#") Стоимость
+          a(href="#cost" class="menu-link") Стоимость
         li
-          a(href="#") Доставка
+          a(href="#delivery" class="menu-link") Доставка
         span.righted
           a(href="tel: +79818223153") +7 981 8223153 
     <a href="#" class="menu-btn">
     <span></span>
     </a>
+    .overlay
+  img.background-top(src="../src/images/header-bg.png")
+  .gradient
   header
     .container  
       .header-logo
@@ -31,36 +34,36 @@ block content
       .header-description
         |  для приверженцев кето-диеты и для тех, кто только подумывает о кетозе.
       .header-arrow
-        a(href="#")
+        .header-arrow__button
           img(src="../src/images/arrow.svg") 
       .header-forget
         | Забудь о том, что надо готовить.   
       .header-easy 
         | Просто. Ешь. Больше. Жиров. 
-      .keto-item__description
+      #rations.keto-item__description
         | Основываясь на последних открытиях диетологии и собственном опыте, мы разработали три вида кето-рационов:   
   section.keto-ration
     .container  
       .keto-items
-        .keto-item.green
+        .keto-item.green(data-scroll="fit")
           .keto-item__title
             | FIT
           .keto-item__subtitle
             | 1300 ккал/день 
 
-        .keto-item.orange
+        .keto-item.orange(data-scroll="balance")
           .keto-item__title
             | BALANCE
           .keto-item__subtitle
             | 2000 ккал/день  
 
-        .keto-item.blue
+        .keto-item.blue(data-scroll="sport")
           .keto-item__title
             | SPORT
           .keto-item__subtitle
             | 2500 ккал/день 
 
-  section.fit
+  section#fit.fit
     .container
       .dish-wrapper
         .dish-left
@@ -132,7 +135,7 @@ block content
 
 
 
-  section.balance
+  section#balance.balance
     .container
       .dish-wrapper
         .dish-left
@@ -219,7 +222,7 @@ block content
             img(src="../src/images/tg-hidden.svg")          
             img(src="../src/images/wapp-hidden.svg")           
                      
-  section.sport
+  section#sport.sport
     .container
       .dish-wrapper
         .dish-left
@@ -319,7 +322,7 @@ block content
             img(src="../src/images/tg-hidden.svg")          
             img(src="../src/images/wapp-hidden.svg")        
 
-  section.futures 
+  section#benefit.futures 
     .container
       .futures-subtitle
         | Сосредоточиться на себе
@@ -345,7 +348,7 @@ block content
             |  разные блюда, а не думать, 
             |  «чего бы такого поесть сегодня?»   
 
-  section.choose-card
+  section#cost.choose-card
     .container
       .choose-card__subtitle
         | Для лучших результатов
@@ -446,7 +449,7 @@ block content
             button.order
               | Перейти к заказу    
 
-  section.delivery
+  section#delivery.delivery
     container
       .delivery-subtitle
         | Еда сама найдет тебя

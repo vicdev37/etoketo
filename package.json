@@ -29,6 +29,7 @@
   "dependencies": {
     "@babel/runtime": "^7.6.2",
     "autoprefixer": "^9.6.1",
+    "body-scroll-lock": "^2.6.4",
     "jquery": "^3.4.1",
     "mongodb": "^3.3.2",
     "nodemon": "^1.19.3",
