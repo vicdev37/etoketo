@@ -141,6 +141,16 @@
     }
 }
 
+@media (max-width: 767px) {
+    .choose-card_button {
+        opacity: 1;
+    }
+
+    .card-sport {
+        margin-top: 50px;
+    }
+}
+
 @media (max-width: 580px) {
     .choose-card__wrapper {
         margin-top: 16px;
@@ -152,5 +162,13 @@
 
     .choose-card__subtitle {
         font-size: 17px;
+    }
+
+    .card-balance {
+        margin-top: 40px;
+    }
+
+    .card-sport {
+        margin-top: 61px;
     }
 }

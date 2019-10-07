@@ -17,9 +17,10 @@
 }
 
 .delivery-wrapper {
+    width: 100%;
     margin-top: 111px;
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
     flex-flow: row wrap;
     align-items: baseline;
 }
@@ -36,6 +37,7 @@
 @media (max-width: 918px) {
     .delivery-wrapper {
         margin-top: 46px;
+        justify-content: space-around;
     }
 
     .delivery-item {
