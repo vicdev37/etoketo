@@ -142,16 +142,15 @@
 }
 
 @media (max-width: 767px) {
-    .choose-card_button {
+    .choose-card_button.down {
         opacity: 1;
     }
 
-    .card-sport {
-        margin-top: 50px;
-    }
+
+
 }
 
-@media (max-width: 580px) {
+@media (max-width: 598px) {
     .choose-card__wrapper {
         margin-top: 16px;
     }
@@ -165,10 +164,16 @@
     }
 
     .card-balance {
-        margin-top: 40px;
+        margin-top: -60px;
     }
 
     .card-sport {
-        margin-top: 61px;
+        margin-top: -140px;
+    }
+}
+
+@media (max-width: 432px) {
+    .choose-card {
+        margin-top: 73px;
     }
 }

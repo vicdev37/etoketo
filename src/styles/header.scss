@@ -90,6 +90,12 @@ header {
     }
 }
 
+@media (max-width: 656px) {
+    .header-arrow {
+        margin-top: 19px;
+    }
+}
+
 @media (max-width: 444px) {
     .header-title {
         h1 {

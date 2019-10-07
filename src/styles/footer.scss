@@ -1,10 +1,10 @@
 footer {
-    height: 2157px;
     margin-top: 30px;
     color: $white;
     letter-spacing: 0;
     text-align: center;
-    background: url('../images/footer_bg.png') center/cover no-repeat;
+    background: url('../images/footer_bg.jpg') center/cover no-repeat;
+    padding-bottom: 53px;
 }
 
 .footer-call {
@@ -47,7 +47,7 @@ footer {
     display: flex;
     margin-top: 20px;
 
-    img:not(:first-child) {
+    a:not(:first-child) {
         margin-left: 40px;
     }
 }
@@ -89,7 +89,7 @@ ul.footer-nav {
     }
 
     .footer-socials__wrapper {
-        img:not(:first-child) {
+        a:not(:first-child) {
             margin-left: 20px;
         }
     }

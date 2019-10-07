@@ -75,8 +75,16 @@
 }
 
 @media (max-width: 656px) {
+    .keto-items {
+        margin-top: 0;
+    }
+
     .keto-item {
         margin-top: 40px;
+    }
+
+    .keto-item__description {
+        margin-top: 80px;
     }
 }
 

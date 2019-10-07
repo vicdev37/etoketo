@@ -182,7 +182,7 @@ button.dayratio:hover,
     margin-top: 15px;
     text-align: center;
 
-    img:not(:first-child) {
+    a:not(:first-child) {
         margin-left: 20px;
     }
 }
@@ -199,5 +199,21 @@ button.dayratio:hover,
     .socials-hidden {
         display: block;
         margin-top: 60px;
+    }
+
+    .order {
+        padding-right: 0;
+        padding-left: 0;
+    }
+}
+
+@media (max-width: 444px) {
+    .socials-hidden {
+        padding: 26px 12px;
+    }
+
+    button.dayratio {
+        padding-right: 37px;
+        padding-left: 37px;
     }
 }

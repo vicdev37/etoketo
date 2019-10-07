@@ -20,7 +20,7 @@ block content
     <span></span>
     </a>
     .overlay
-  img.background-top(src="../src/images/header-bg.png")
+  img.background-top(src="../src/images/header-bg.jpg")
   .gradient
   header
     .container  
@@ -130,8 +130,10 @@ block content
           .socials-hidden__title
             | На любые вопросы ответим в чате:
           .socials-hidden__icons
-            img(src="../src/images/tg-hidden.svg")          
-            img(src="../src/images/wapp-hidden.svg")          
+            a(href="#")
+              img(src="../src/images/tg-hidden.svg") 
+            a(href="#")           
+              img(src="../src/images/wapp-hidden.svg")          
 
 
 
@@ -219,8 +221,10 @@ block content
           .socials-hidden__title
             | На любые вопросы ответим в чате:
           .socials-hidden__icons
-            img(src="../src/images/tg-hidden.svg")          
-            img(src="../src/images/wapp-hidden.svg")           
+            a(href="#")
+              img(src="../src/images/tg-hidden.svg") 
+            a(href="#")           
+              img(src="../src/images/wapp-hidden.svg")           
                      
   section#sport.sport
     .container
@@ -319,8 +323,10 @@ block content
           .socials-hidden__title
             | На любые вопросы ответим в чате:
           .socials-hidden__icons
-            img(src="../src/images/tg-hidden.svg")          
-            img(src="../src/images/wapp-hidden.svg")        
+            a(href="#")
+              img(src="../src/images/tg-hidden.svg")          
+            a(href="#")
+              img(src="../src/images/wapp-hidden.svg")        
 
   section#benefit.futures 
     .container
@@ -445,7 +451,7 @@ block content
                 | рациона 
               .prise
                 | 4500р.
-          .choose-card_button        
+          .choose-card_button.down       
             button.order
               | Перейти к заказу    
 
@@ -491,10 +497,14 @@ block content
       .footer-socials__title
         | Поделиться этой страницей с друзьями
       .footer-socials__wrapper
-        img(src="../src/images/fb.svg")       
-        img(src="../src/images/vk.svg")       
-        img(src="../src/images/tg.svg")       
-        img(src="../src/images/wapp.svg") 
+        a(href="#")
+          img(src="../src/images/fb.svg")
+        a(href="#")         
+          img(src="../src/images/vk.svg")  
+        a(href="#")       
+          img(src="../src/images/tg.svg")  
+        a(href="#")
+          img(src="../src/images/wapp.svg") 
       ul.footer-nav
         li
           a(href="#" ) Меню ЭтоКето
