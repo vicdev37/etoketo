@@ -75,7 +75,37 @@ section {
   z-index: 6;
   width: 100%;
   height: 50%;
-  background-image: linear-gradient(180deg, rgba(6,8,7,0.00) 20%, #060807 23%, #060807 49%, #16282B 98%, rgba(22,40,43,0.00) 100%);
+  background-image: linear-gradient(180deg, rgba(6, 8, 7, 0) 21%, #060807 37%, #060807 51%, #16282b 98%, rgba(22, 40, 43, 0));
+}
+
+@media (max-width: 1400px) {
+  .gradient {
+    background-image: linear-gradient(180deg,rgba(6,8,7,0) 15%,#060807 29%,#060807 49%,#16282b 98%,rgba(22,40,43,0));
+  }
+}
+
+@media (max-width: 1000px) {
+  .gradient {
+    background-image: linear-gradient(180deg, rgba(6, 8, 7, 0) 7%, #060807 13%, #060807 41%, #16282b 95%, rgba(22, 40, 43, 0));
+  }
+}
+
+@media (max-width: 690px) {
+  .gradient {
+    background-image: linear-gradient(180deg, rgba(6, 8, 7, 0) 5%, #060807 13%, #060807 44%, #16282b 95%, rgba(22, 40, 43, 0))
+  }
+}
+
+@media (max-width: 600px) {
+  .gradient {
+    background-image: linear-gradient(180deg, rgba(6, 8, 7, 0) 2%, #060807 8%, #060807 44%, #16282b 95%, rgba(22, 40, 43, 0));
+  }
+}
+
+@media (max-width: 370px) {
+  .gradient {
+    background-image: linear-gradient(180deg, rgba(6, 8, 7, 0) 5%, #060807 5%, #060807 44%, #16282b 95%, rgba(22, 40, 43, 0));
+  }
 }
 
 @media (max-width: 442px) {
