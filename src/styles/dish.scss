@@ -187,6 +187,15 @@ button.dayratio:hover,
     }
 }
 
+.socials-hidden__link {
+    display: inline-block;
+    vertical-align: top;
+}
+
+.socials-hidden__link:first-child {
+    margin-right: 20px;
+}
+
 @media (max-width: 768px) {
     button.order {
         opacity: 0.77;
