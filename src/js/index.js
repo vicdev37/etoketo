@@ -91,7 +91,7 @@ $(document).ready(() => {
   })
 
   $('.header-arrow__button').click(() => {
-    $('.header-easy')[0].scrollIntoView({
+    $('.keto-item__description')[0].scrollIntoView({
       block: "center",
       behavior: "smooth"
     })
