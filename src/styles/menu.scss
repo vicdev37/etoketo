@@ -151,6 +151,7 @@
 
     .overlay {
         display: block;
+        visibility: hidden;
     }
 
     .menu_active .overlay {
@@ -161,5 +162,6 @@
         height: 100vh;
         background: #000000;
         opacity: 0.5;
+        visibility: visible;
     }
 }

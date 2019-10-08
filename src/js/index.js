@@ -50,20 +50,21 @@ $(document).ready(() => {
   })
 
   // menu
+  const overlay = $('.overlay')[0]
+
+
   $('.menu-btn').on('click', function (e) {
     e.preventDefault();
     $('.menu').toggleClass('menu_active');
     if ($('.menu').hasClass("menu_active")) {
-      // disableBodyScroll();
-      document.body.style.overflow = 'hidden';
+      disableBodyScroll(overlay);
     }
   });
 
   $('.overlay').on('click', function (e) {
     $('.menu').toggleClass('menu_active');
     if (!$('.menu').hasClass("menu_active")) {
-      // enableBodyScroll();
-      document.body.style.overflow = 'auto';
+      enableBodyScroll(overlay);
     }
   })
 
@@ -74,7 +75,7 @@ $(document).ready(() => {
   $('.menu-link').each(function () {
     $(this).click(() => {
       if (window.screen.width <= 690) {
-        enableBodyScroll();
+        enableBodyScroll(overlay);
         $('.menu').toggleClass('menu_active');
       }
 
