@@ -7,9 +7,12 @@ window.$ = window.jQuery = jquery;
 import 'babel-polyfill';
 
 $(document).ready(() => {
-  const menu = $('.menu-nav')[0]
-  const menuHeight = menu.offsetHeight + 5
+  const menu = $('.menu')[0]
+  const getMenuHeight = () => {
+    return menu.offsetHeight + 5
+  }
 
+  let menuHeight = getMenuHeight()
   let lastPageYOffset = pageYOffset
   let transform = 0
 
@@ -37,16 +40,11 @@ $(document).ready(() => {
     lastPageYOffset = pageYOffset
   }
 
-  if (window.screen.width >= 690) {
-    window.addEventListener('scroll', scrollHandler)
-  }
+  
+  window.addEventListener('scroll', scrollHandler)
 
   window.addEventListener("resize", () => {
-    if (window.screen.width >= 690) {
-      window.addEventListener('scroll', scrollHandler)
-    } else {
-      window.removeEventListener('scroll', scrollHandler)
-    }
+    menuHeight = getMenuHeight()
   })
 
   // menu
@@ -55,15 +53,16 @@ $(document).ready(() => {
 
   $('.menu-btn').on('click', function (e) {
     e.preventDefault();
-    $('.menu').toggleClass('menu_active');
-    if ($('.menu').hasClass("menu_active")) {
+
+    $('body').toggleClass('menu-open');
+    if ($('body').hasClass("menu-open")) {
       disableBodyScroll(overlay);
     }
   });
 
   $('.overlay').on('click', function (e) {
-    $('.menu').toggleClass('menu_active');
-    if (!$('.menu').hasClass("menu_active")) {
+    $('body').toggleClass('menu-open');
+    if (!$('body').hasClass("menu-open")) {
       enableBodyScroll(overlay);
     }
   })
@@ -76,7 +75,7 @@ $(document).ready(() => {
     $(this).click(() => {
       if (window.screen.width <= 690) {
         enableBodyScroll(overlay);
-        $('.menu').toggleClass('menu_active');
+        $('body').toggleClass('menu-open');
       }
 
       $(document.body).animate({
@@ -93,11 +92,9 @@ $(document).ready(() => {
     })
   })
 
-  $('.header-arrow__button').click(() => {
-    $('.keto-item__description')[0].scrollIntoView({
-      block: "center",
-      behavior: "smooth"
-    })
+  $('.header-arrow__button').click(function() {
+    $(document.body).animate({
+      'scrollTop': $('#' + $(this).data().scroll).offset().top - topOffset
+    }, 500);
   })
-
 });

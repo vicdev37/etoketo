@@ -2,7 +2,7 @@ extends layout/layout.pug
 
 block content
   section.menu
-    nav.menu-nav
+    nav.menu-nav.menu-nav__desctop
       ul(class="main-menu")
         a(href='#')
           img.logo(src="../src/images/logo.svg" alt="Logo") 
@@ -19,7 +19,21 @@ block content
     <a href="#" class="menu-btn">
     <span></span>
     </a>
-    .overlay
+  nav.menu-nav.menu-mobile
+    ul(class="main-menu")
+      a(href='#')
+        img.logo(src="../src/images/logo.svg" alt="Logo") 
+      li
+        a(href="#rations" class="menu-link") Рационы
+      li
+        a(href="#benefit" class="menu-link") Выгода
+      li
+        a(href="#cost" class="menu-link") Стоимость
+      li
+        a(href="#delivery" class="menu-link") Доставка
+      span.righted
+        a(href="tel: +79818223153") +7 981 8223153 
+  .overlay
   img.background-top(src="../src/images/header-bg.jpg")
   .gradient
   header
@@ -34,9 +48,9 @@ block content
       .header-description
         |  для приверженцев кето-диеты и для тех, кто только подумывает о кетозе.
       .header-arrow
-        .header-arrow__button
+        .header-arrow__button(data-scroll="header-forget")
           img(src="../src/images/arrow.svg") 
-      .header-forget
+      #header-forget.header-forget
         | Забудь о том, что надо готовить.   
       .header-easy 
         | Просто. Ешь. Больше. Жиров. 
