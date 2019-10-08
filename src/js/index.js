@@ -54,14 +54,16 @@ $(document).ready(() => {
     e.preventDefault();
     $('.menu').toggleClass('menu_active');
     if ($('.menu').hasClass("menu_active")) {
-      disableBodyScroll();
+      // disableBodyScroll();
+      document.body.style.overflow = 'hidden';
     }
   });
 
   $('.overlay').on('click', function (e) {
     $('.menu').toggleClass('menu_active');
     if (!$('.menu').hasClass("menu_active")) {
-      enableBodyScroll();
+      // enableBodyScroll();
+      document.body.style.overflow = 'auto';
     }
   })
 
