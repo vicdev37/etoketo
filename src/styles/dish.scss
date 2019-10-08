@@ -86,8 +86,7 @@ ul.dish-ul {
 
 }
 
-button.dayratio,
-.order {
+button.dayratio {
     width: 100%;
     margin-top: 30px;
     padding: 23px 105px;
@@ -104,9 +103,23 @@ button.dayratio,
     cursor: pointer;
 }
 
-button.dayratio:hover,
+.order {
+    width: 100%;
+    margin-top: 30px;
+    padding: 15px 105px;
+    background: #3F484A;
+    border: none;
+    border-radius: 50px;
+    font-family: PTSans-Regular;
+    font-size: 20px;
+    color: #FFFFFF;
+    letter-spacing: 0;
+    text-align: center;
+    line-height: 32px;
+    cursor: pointer;
+}
+
 .order:hover {
-    opacity: 0.77;
     background: #50B02C;
     color: $white;
 }

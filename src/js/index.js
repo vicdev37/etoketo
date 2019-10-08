@@ -14,7 +14,7 @@ $(document).ready(() => {
   let transform = 0
 
   const scrollHandler = (evt) => {
-    
+
     if ((lastPageYOffset <= pageYOffset) && (pageYOffset > 600)) {
       if (transform <= menuHeight) {
         transform = transform + (pageYOffset - lastPageYOffset)
@@ -53,14 +53,14 @@ $(document).ready(() => {
   $('.menu-btn').on('click', function (e) {
     e.preventDefault();
     $('.menu').toggleClass('menu_active');
-    if ($('.menu').hasClass( "menu_active" )) {
+    if ($('.menu').hasClass("menu_active")) {
       disableBodyScroll();
     }
   });
 
   $('.overlay').on('click', function (e) {
     $('.menu').toggleClass('menu_active');
-    if (!$('.menu').hasClass( "menu_active" )) {
+    if (!$('.menu').hasClass("menu_active")) {
       enableBodyScroll();
     }
   })
@@ -69,29 +69,32 @@ $(document).ready(() => {
   // scroll to
   let topOffset = 100
 
-  $('.menu-link').each(function() {
+  $('.menu-link').each(function () {
     $(this).click(() => {
       if (window.screen.width <= 690) {
         enableBodyScroll();
         $('.menu').toggleClass('menu_active');
       }
-      
+
       $(document.body).animate({
         'scrollTop': $($(this).attr('href')).offset().top - topOffset
       }, 500);
     })
   })
 
-  $('.keto-item').each(function() {
+  $('.keto-item').each(function () {
     $(this).click(() => {
       $(document.body).animate({
         'scrollTop': $('#' + $(this).data().scroll).offset().top - topOffset
       }, 500);
     })
   })
-  
+
   $('.header-arrow__button').click(() => {
-    $('.header-easy')[0].scrollIntoView({block: "center", behavior: "smooth"})
+    $('.header-easy')[0].scrollIntoView({
+      block: "center",
+      behavior: "smooth"
+    })
   })
 
 });
