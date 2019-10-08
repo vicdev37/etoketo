@@ -117,6 +117,7 @@ button.dayratio {
     text-align: center;
     line-height: 32px;
     cursor: pointer;
+    transition: 0.5s;
 }
 
 .order:hover {
@@ -214,6 +215,7 @@ button.dayratio {
         opacity: 0.77;
         background: #50B02C;
         color: $white;
+
     }
 }
 
