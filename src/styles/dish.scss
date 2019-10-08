@@ -86,28 +86,26 @@ ul.dish-ul {
 
 }
 
-button.dayratio {
-    width: 100%;
+.dayratio {
     margin-top: 30px;
-    padding: 23px 105px;
     opacity: 0.3;
-    background: #3F484A;
-    border: none;
-    border-radius: 50px;
     font-family: PTSans-Regular;
     font-size: 16px;
     color: #FFFFFF;
     letter-spacing: 0;
     text-align: center;
     line-height: 32px;
-    cursor: pointer;
+}
+
+.dayratio:hover {
+    opacity: 0.5;
 }
 
 .order {
     width: 100%;
     margin-top: 30px;
     padding: 15px 105px;
-    background: #3F484A;
+    background: #3C7E23;
     border: none;
     border-radius: 50px;
     font-family: PTSans-Regular;
@@ -121,7 +119,7 @@ button.dayratio {
 }
 
 .order:hover {
-    background: #50B02C;
+    background: #46FF00;
     color: $white;
 }
 
@@ -133,6 +131,11 @@ button.dayratio {
     background: #FFFFFF;
     box-shadow: 0 9px 12px 0 #000000;
     color: $black;
+    transition: 0.3s;
+}
+
+.dish-card:hover {
+    box-shadow: 0 9px 12px 0 #3C7E23
 }
 
 .dish-card__photo {
@@ -210,12 +213,24 @@ button.dayratio {
     margin-right: 20px;
 }
 
-@media (max-width: 768px) {
+button.order.mobile-show {
+    display: none;
+}
+
+@media (max-width: 798px) {
     button.order {
         opacity: 0.77;
-        background: #50B02C;
+        background: #46FF00;
         color: $white;
 
+    }
+
+    button.order.mobile-hide {
+        display: none;
+    }
+
+    button.order.mobile-show {
+        display: block;
     }
 }
 

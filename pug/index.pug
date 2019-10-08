@@ -46,7 +46,7 @@ block content
         h1 
           | рационы
       .header-description
-        |  для приверженцев кето-диеты и для тех, кто только подумывает о кетозе.
+        |  Для приверженцев кето-диеты и для тех, кто только подумывает о кетозе
       .header-arrow
         .header-arrow__button(data-scroll="header-forget")
           img(src="../src/images/arrow.svg") 
@@ -95,7 +95,7 @@ block content
               .fit-dot.uncolor  
             .dish-description
               | Включает 2 приёма пищи в день. 
-              | <br> Он для тебя, если ты:
+              | <br><br> Он для тебя, если ты:
             ul.dish-ul
               li
                 | хочешь похудеть; 
@@ -104,7 +104,7 @@ block content
                 | <br>твоему организму;
               li
                 | ведешь малоактивный образ жизни.
-            button.dayratio 
+            .dayratio 
               | Пример рациона на 1 день  
 
           .dish-card
@@ -168,16 +168,16 @@ block content
               .balance-dot.uncolor  
             .dish-description
               | Включает 3 приёма пищи в день. 
-              | <br> Он для тебя, если ты:
+              | <br><br> Он для тебя, если ты:
             ul.dish-ul
               li
-                | хочешь просто питаться каждый день 
+                | хочешь питаться каждый день 
                 | <br>без хлопот; 
               li
                 | только присоединился к кето;
               li
                 | ведешь умеренную активность.
-            button.dayratio 
+            .dayratio 
               | Пример рациона на 1 день  
 
           .dish-card
@@ -195,7 +195,7 @@ block content
               .card__text-size
                 | КБЖУ: 485/16/41/11, 445 гр 
           a(href="https://etoketo.ru/#category22783") 
-            button.order
+            button.order.mobile-hide
               | Перейти к заказу   
 
 
@@ -231,6 +231,8 @@ block content
                 | сметана, халапеньо
               .card__text-size
                 | КБЖУ: 872/31/69/10, 295 гр
+          button.order.mobile-show
+              | Перейти к заказу        
         .socials-hidden
           .socials-hidden__title
             | На любые вопросы ответим в чате:
@@ -258,7 +260,7 @@ block content
               .sport-dot.color
             .dish-description
               | Включает 3 приёма пищи в день. 
-              | <br> Он для тебя, если ты:
+              | <br><br> Он для тебя, если ты:
             ul.dish-ul
               li
                 | активно работаешь над своим телом;
@@ -268,7 +270,7 @@ block content
               li
                 | думаешь, что десерты — это 
                 | <br> неизменный элемент дневного рациона 
-            button.dayratio 
+            .dayratio 
               | Пример рациона на 1 день  
 
           .dish-card
@@ -276,30 +278,25 @@ block content
               img(src="../src/images/dishes/sport_01.png")
             .dish-card__text
               .card__text-title
-                | Суп гуляш
+                | Бургер из мраморной говядины
               .card__text-description
-                | Состав: мраморная говядина, лук репчатый 
-                | красный, чеснок, корень сельдерея, перец 
-                | болгарский, масло оливковое, томаты, 
-                | морковь, петрушка, паприка, орегано, 
-                | кайенский перец, тмин, сметана  
+                | Говядина мраморная, сыр чеддер, паприка, орегано, лук репчатый красный, чеснок, микс салатов, бекон, огурцы соленые, томаты, сальса, кето-булочка.
+
               .card__text-size
-                | КБЖУ: 485/16/41/11, 445 гр 
+                | КБЖУ: 953/47/77/10, 360 гр
 
           .dish-card
             .dish-card__photo
               img(src="../src/images/dishes/sport_04.png")
             .dish-card__text
               .card__text-title
-                | Суп гуляш
+                | Чиа пудинг с физалисом и апельсином
               .card__text-description
-                | Состав: мраморная говядина, лук репчатый 
-                | красный, чеснок, корень сельдерея, перец 
-                | болгарский, масло оливковое, томаты, 
-                | морковь, петрушка, паприка, орегано, 
-                | кайенский перец, тмин, сметана  
+                | Семена чиа, кокосовое молоко, физалис, апельсин, желатин, эритрит, ванилин
+
               .card__text-size
-                | КБЖУ: 485/16/41/11, 445 гр 
+                | К214/Б7/Ж15/У5, 210 гр
+
 
                   
 
@@ -309,10 +306,11 @@ block content
               img(src="../src/images/dishes/sport_02.png")
             .dish-card__text
               .card__text-title
-                | Скрембл
+                | Скрэмбл по-мексикански
+
               .card__text-description
-                | Яйца куриные, масло сливочное, лук 
-                | зеленый, халапеньо, томаты, сыр чеддер
+                | Яйца куриные, масло сливочное, лук зеленый, халапеньо, томаты, сыр чеддер
+
               .card__text-size
                 | КБЖУ: 403/26/30/3, 255 гр
           
@@ -322,15 +320,14 @@ block content
               img(src="../src/images/dishes/sport_03.png")
             .dish-card__text
               .card__text-title
-                | Кето-тако из курицы
+                | Пикантный салат с креветками
+
               .card__text-description
-                | Куриный окорочок, яйца куриные, смесь T-
-                | mex, масло оливковое, сыр чеддер, сальса 
-                | (томаты, сок лайма, кинза, чеснок, масло 
-                | льняное), авокадо, лук репчатый красный, 
-                | сметана, халапеньо
+                | Креветки королевские, авокадо, огурец свежий, сок лимона, микс салатов, чеснок, масло оливковое, кинза, фундук, имбирь, кайенский перец
+
               .card__text-size
-                | КБЖУ: 872/31/69/10, 295 гр
+                | КБЖУ: 771/25/69/6, 255 гр
+
           a(href="https://etoketo.ru/#category22783") 
             button.order
               | Перейти к заказу 
@@ -345,34 +342,27 @@ block content
 
   section#benefit.futures 
     .container
-      .futures-subtitle
-        | Сосредоточиться на себе
       .futures-title
         | Зачем заказывать рационы?
       .futures-wrapper
         .futures-item
           img(src="../src/images/futures_1.svg") 
           .futures-item__text  
-            | чтобы тратить время на что-то 
-            | приятное, а не на приготовление
-            | и походы в магазин                                     
+            | Чтобы тратить время на отдых, а не на походы в магазин
+                                  
         .futures-item
           img(src="../src/images/futures_2.svg")
           .futures-item__text 
-            | чтобы генерить лучшие идеи, 
-            | а не вспоминать: «не забыл ли сделать 
-            | заказ, подходит ли еда под кето?»                                           
+            | Чтобы генерировать идеи, а не мысли о еде 
+                                          
         .futures-item  
           img(src="../src/images/futures_3.svg") 
           .futures-item__text  
-            | чтобы каждый день потреблять
-            |  разные блюда, а не думать, 
-            |  «чего бы такого поесть сегодня?»   
+            | Чтобы каждый день питаться разнообрано, а не готовить
+ 
 
   section#cost.choose-card
     .container
-      .choose-card__subtitle
-        | Для лучших результатов
       .choose-card__title
         | Выбери свой рацион
       .choose-card__wrapper
@@ -384,7 +374,7 @@ block content
               | 1300 ккал/день
             <hr>  
             .ratio-card__prise
-              | 700р.
+              | 700 &#8381
             <hr>
             .ratio-card__description
               | стоимость дневного рациона
@@ -395,14 +385,14 @@ block content
                 | недельного 
                 | рациона 
               .prise
-                | 4900р.
+                | 4900 &#8381
             .prise-wrapper.mute
               .prise-description
                 | стоимость
                 | 3-дневного 
                 | рациона 
               .prise
-                | 2400р. 
+                | 2400 &#8381 
           .choose-card_button        
             a(href="https://etoketo.ru/#category22783") 
               button.order
@@ -416,7 +406,7 @@ block content
               | 2000 ккал/день
             <hr>  
             .ratio-card__prise
-              | 1000р.
+              | 1000 &#8381
             <hr>
             .ratio-card__description
               | стоимость дневного рациона
@@ -427,14 +417,14 @@ block content
                 | недельного 
                 | рациона 
               .prise
-                | 7000р.
+                | 7000 &#8381
             .prise-wrapper.mute
               .prise-description
                 | стоимость
                 | 3-дневного 
                 | рациона 
               .prise
-                | 3600р.
+                | 3600 &#8381
           .choose-card_button        
             a(href="https://etoketo.ru/#category22783") 
               button.order
@@ -449,7 +439,7 @@ block content
               | 2500 ккал/день
             <hr>  
             .ratio-card__prise
-              | 1200р.
+              | 1200 &#8381
             <hr>
             .ratio-card__description
               | стоимость дневного рациона
@@ -460,14 +450,14 @@ block content
                 | недельного 
                 | рациона 
               .prise
-                | 8400р.
+                | 8400 &#8381
             .prise-wrapper.mute
               .prise-description
                 | стоимость
                 | 3-дневного 
                 | рациона 
               .prise
-                | 4500р.
+                | 4500 &#8381
           .choose-card_button.down 
             a(href="https://etoketo.ru/#category22783")      
               button.order
@@ -508,8 +498,6 @@ block content
         a(href="tel: +79818223153") +7 981 8223153  
       .footer-logo
         img(src="../src/images/logo-big.svg") 
-      .footer-subtitle 
-        | Надеемся, слюнка уже потекла
       .footer-title
         | Всем кето!
       .footer-socials__title
