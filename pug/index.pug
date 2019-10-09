@@ -1,5 +1,6 @@
 extends layout/layout.pug
 
+
 block content
   section.menu
     nav.menu-nav.menu-nav__desctop
@@ -58,7 +59,7 @@ block content
         | Основываясь на&nbsp;последних открытиях диетологии и&nbsp;собственном опыте, мы&nbsp;разработали три вида кето-рационов:
   section.keto-ration
     .container  
-      .keto-items
+      .keto-items(data-aos="fade")
         .keto-item.green(data-scroll="fit")
           .keto-item__title
             | FIT
@@ -80,7 +81,7 @@ block content
   section#fit.fit
     .container
       .dish-wrapper
-        .dish-left
+        .dish-left(data-aos="fade-right")
           .dish-declaration
             .dish-title
               | FIT
@@ -124,7 +125,7 @@ block content
 
                   
 
-        .dish-right 
+        .dish-right(data-aos="fade-left")
           .dish-card
             .dish-card__photo
               img(src="../src/images/dishes/fit_01.png")
@@ -153,7 +154,7 @@ block content
   section#balance.balance
     .container
       .dish-wrapper
-        .dish-left
+        .dish-left(data-aos="fade-right")
           .dish-declaration
             .dish-title
               | BALANCE
@@ -201,7 +202,7 @@ block content
 
                   
 
-        .dish-right 
+        .dish-right(data-aos="fade-left")
           .dish-card
             .dish-card__photo
               img(src="../src/images/dishes/balance_03.png")
@@ -238,7 +239,7 @@ block content
   section#sport.sport
     .container
       .dish-wrapper
-        .dish-left
+        .dish-left(data-aos="fade-right")
           .dish-declaration
             .dish-title
               | SPORT
@@ -258,7 +259,7 @@ block content
               li
                 | активно работаешь над своим телом;
               li
-                | не&nbsp;считаешь калории, потому что это тебе не&nbsp;нужно;
+                | не&nbsp;считаешь калории, потому что это <br> тебе не&nbsp;нужно;
               li
                 | думаешь, что десерты&nbsp;&mdash; это <br> неизменный элемент дневного рациона
             .dayratio 
@@ -291,7 +292,7 @@ block content
 
                   
 
-        .dish-right 
+        .dish-right(data-aos="fade-left") 
           .dish-card
             .dish-card__photo
               img(src="../src/images/dishes/sport_02.png")
@@ -336,17 +337,17 @@ block content
       .futures-title
         | Зачем заказывать рационы?
       .futures-wrapper
-        .futures-item
+        .futures-item(data-aos="fade-right")
           img(src="../src/images/futures_1.svg") 
           .futures-item__text  
             | Чтобы тратить время на&nbsp;отдых, а&nbsp;не&nbsp;на&nbsp;походы в&nbsp;магазин
                                   
-        .futures-item
+        .futures-item(data-aos="fade")
           img(src="../src/images/futures_2.svg")
           .futures-item__text 
             | Чтобы генерировать идеи, <br>а&nbsp;не&nbsp;мысли о&nbsp;еде
                                           
-        .futures-item  
+        .futures-item(data-aos="fade-left")
           img(src="../src/images/futures_3.svg") 
           .futures-item__text  
             | Чтобы каждый день питаться разнообрано, а&nbsp;не&nbsp;готовить
@@ -358,7 +359,7 @@ block content
         | Выбери свой рацион
       .choose-card__wrapper
         .card-wrapper
-          .ratio-card.card-fit
+          .ratio-card.card-fit(data-aos="fade-right")
             .ratio-card__title
               | FIT
             .ratio-card__subtitle
@@ -385,7 +386,7 @@ block content
                 | Перейти к&nbsp;заказу       
 
         .card-wrapper             
-          .ratio-card.card-balance
+          .ratio-card.card-balance(data-aos="fade")
             .ratio-card__title
               | BALANCE
             .ratio-card__subtitle
@@ -413,7 +414,7 @@ block content
         
 
         .card-wrapper
-          .ratio-card.card-sport
+          .ratio-card.card-sport(data-aos="fade-left")
             .ratio-card__title
               | SPORT
             .ratio-card__subtitle
@@ -446,15 +447,15 @@ block content
       .delivery-title
         | Готовим и&nbsp;доставляем по&nbsp;СПБ
       .delivery-wrapper
-        .delivery-item
+        .delivery-item(data-aos="fade-right")
           img(src="../src/images/delivery_1.svg")
           .delivery-item__description
             | Оформи заказ по&nbsp;<a href = "tel: +79818223153">телефону</a> или через корзину на&nbsp;<a href = "https://etoketo.ru">etoketo.ru</a> и&nbsp;мы&nbsp;свяжемся с&nbsp;тобой для уточнения деталей
-        .delivery-item
+        .delivery-item(data-aos="fade")
           img(src="../src/images/delivery_2.svg")
           .delivery-item__description
             | Наша еда хранится не&nbsp;более 3-х суток, и&nbsp;для недельного рациона потребуется больше одной доставки
-        .delivery-item
+        .delivery-item(data-aos="fade-left")
           img(src="../src/images/delivery_3.svg")
           .delivery-item__description
             | Мы&nbsp;никогда не&nbsp;храним готовую еду и&nbsp;продукты, а&nbsp;готовим всё исключительно под заказ
