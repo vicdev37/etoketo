@@ -2,7 +2,7 @@ var jquery = require("jquery");
 const bodyScrollLock = require('body-scroll-lock');
 const disableBodyScroll = bodyScrollLock.disableBodyScroll;
 const enableBodyScroll = bodyScrollLock.enableBodyScroll;
-import AOS from 'aos'
+import aos from 'aos'
 
 window.$ = window.jQuery = jquery;
 import 'babel-polyfill';
@@ -102,7 +102,7 @@ $(document).ready(() => {
     }, 500);
   })
 
-  AOS.init({
+  aos.init({
     offset: 200,
     duration: 600,
     easing: "ease-in",
