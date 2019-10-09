@@ -170,6 +170,18 @@
     .card-sport {
         margin-top: -140px;
     }
+
+    .card-wrapper:hover {
+        transform: translateY(0);
+
+        .choose-card_button {
+            opacity: 1;
+        }
+    }
+
+    .choose-card_button.mobile-hide {
+        display: none;
+    }
 }
 
 @media (max-width: 432px) {
