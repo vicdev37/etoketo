@@ -2,11 +2,15 @@ var jquery = require("jquery");
 const bodyScrollLock = require('body-scroll-lock');
 const disableBodyScroll = bodyScrollLock.disableBodyScroll;
 const enableBodyScroll = bodyScrollLock.enableBodyScroll;
+import AOS from 'aos'
 
 window.$ = window.jQuery = jquery;
 import 'babel-polyfill';
 
 $(document).ready(() => {
+
+
+
   const menu = $('.menu')[0]
   const getMenuHeight = () => {
     return menu.offsetHeight + 5
@@ -40,7 +44,7 @@ $(document).ready(() => {
     lastPageYOffset = pageYOffset
   }
 
-  
+
   window.addEventListener('scroll', scrollHandler)
 
   window.addEventListener("resize", () => {
@@ -92,9 +96,17 @@ $(document).ready(() => {
     })
   })
 
-  $('.header-arrow__button').click(function() {
+  $('.header-arrow__button').click(function () {
     $(document.body).animate({
       'scrollTop': $('#' + $(this).data().scroll).offset().top - topOffset
     }, 500);
+  })
+
+  AOS.init({
+    offset: 200,
+    duration: 600,
+    easing: "ease-in",
+    delay: 100,
+    disable: "mobile"
   })
 });

@@ -28,6 +28,7 @@
   },
   "dependencies": {
     "@babel/runtime": "^7.6.2",
+    "aos": "^2.3.4",
     "autoprefixer": "^9.6.1",
     "body-scroll-lock": "^2.6.4",
     "jquery": "^3.4.1",
