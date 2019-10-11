@@ -36,9 +36,9 @@
 .card-wrapper:hover {
     transform: translateY(-2%);
 
-    .choose-card_button {
-        opacity: 1;
-    }
+    // .choose-card_button {
+    //     opacity: 1;
+    // }
 }
 
 .ratio-card {
@@ -121,7 +121,7 @@
 
 
 .choose-card_button {
-    opacity: 0;
+    opacity: 1;
     margin: auto;
     width: 70%;
     transition: 0.5s;
