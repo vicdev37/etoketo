@@ -83,6 +83,7 @@ ul.dish-ul {
     letter-spacing: 0;
     margin-top: 0;
     margin-bottom: 0;
+
     li {
         line-height: 30px;
     }
@@ -222,6 +223,19 @@ button.order.mobile-show {
     display: none;
 }
 
+.links.mobile-show {
+    display: none;
+}
+
+.links {
+    max-width: 400px;
+}
+
+.files {
+    background-color: #919191;
+    padding: 15px 15px;
+}
+
 @media (max-width: 798px) {
     button.order {
         // opacity: 0.77;
@@ -233,8 +247,21 @@ button.order.mobile-show {
         display: none;
     }
 
+    .links.mobile-hide {
+        display: none;
+    }
+
+    .links.mobile-show {
+        display: block;
+    }
+
     button.order.mobile-show {
         display: block;
+    }
+
+    button.order.files {
+        background-color: #919191;
+        padding: 15px 15px;
     }
 }
 
@@ -258,5 +285,11 @@ button.order.mobile-show {
     button.dayratio {
         padding-right: 37px;
         padding-left: 37px;
+    }
+
+    button.order.files {
+        background-color: #919191;
+        padding: 15px 15px;
+        font-size: 17px;
     }
 }
