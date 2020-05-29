@@ -3,7 +3,7 @@
 }
 
 .card-wrapper {
-    height: 620px;
+    height: auto;
     transition: 0.5s;
 }
 
@@ -34,7 +34,7 @@
 }
 
 .card-wrapper:hover {
-    transform: translateY(-2%);
+    transform: translateY(-7%);
 
     // .choose-card_button {
     //     opacity: 1;
@@ -42,9 +42,9 @@
 }
 
 .ratio-card {
-    max-width: 300px;
+    width: 230px;
     border-radius: 62px;
-    padding: 33px 48px 53px 48px;
+    padding: 33px 29px 34px 29px;
 
 }
 
@@ -65,6 +65,7 @@
     font-size: 15px;
     text-align: center;
     margin-top: 18px;
+    margin-bottom: 28px;
 }
 
 .ratio-card__prise {
@@ -72,6 +73,8 @@
     font-size: 40px;
     text-align: center;
     font-weight: bold;
+    padding-top: 25px;
+    padding-bottom: 25px;
 }
 
 .ratio-card__description {
@@ -87,7 +90,7 @@
     justify-content: space-between;
     align-items: center;
     max-width: 180px;
-    margin-top: 67px;
+    margin-top: 43px;
 }
 
 .prise-wrapper.mute {
@@ -106,16 +109,20 @@
     font-size: 20px;
 }
 
+.ratio-card.card-light {
+    background: #ffc66c;
+}
+
 .ratio-card.card-fit {
-    background: #DDFFC3;
+    background: #ffc1b5;
+}
+
+.ratio-card.card-base {
+    background: #fe8a80;
 }
 
 .ratio-card.card-balance {
-    background: #FFDDA7;
-}
-
-.ratio-card.card-sport {
-    background: #A8F2FF;
+    background: #c2554f;
 }
 
 
@@ -123,7 +130,7 @@
 .choose-card_button {
     opacity: 1;
     margin: auto;
-    width: 70%;
+    width: 90%;
     transition: 0.5s;
 
     button {
@@ -151,6 +158,10 @@
 }
 
 @media (max-width: 598px) {
+    .card-wrapper:last-child {
+        margin-top: 80px;
+    }
+
     .choose-card__wrapper {
         margin-top: 16px;
     }

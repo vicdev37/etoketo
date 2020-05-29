@@ -54,7 +54,7 @@ block content
       #header-forget.header-forget
         | Забудь о&nbsp;том, что надо готовить.
       .header-easy 
-        | Просто. Ешь. Больше. Жиров. 
+        | Заказывай готовые рационы
       #rations.keto-item__description
         | Основываясь на&nbsp;последних открытиях диетологии и&nbsp;собственном опыте, мы&nbsp;разработали три вида кето-рационов:
   section.keto-ration
@@ -62,21 +62,17 @@ block content
       .keto-items(data-aos="fade")
         .keto-item.green(data-scroll="fit")
           .keto-item__title
-            | FIT
+            | LIGHT / FIT
           .keto-item__subtitle
-            | 1300&nbsp;ккал/день
+            | 1000&nbsp;ккал / 1500 ккал
 
         .keto-item.orange(data-scroll="balance")
           .keto-item__title
-            | BALANCE
+            | BASE / BALANCE
           .keto-item__subtitle
-            | 2000&nbsp;ккал/день
+            | 1500&nbsp;ккал / 2000 ккал
 
-        .keto-item.blue(data-scroll="sport")
-          .keto-item__title
-            | SPORT
-          .keto-item__subtitle
-            | 2500&nbsp;ккал/день
+        
 
   section#fit.fit
     .container
@@ -84,9 +80,9 @@ block content
         .dish-left(data-aos="fade-right")
           .dish-declaration
             .dish-title
-              | FIT
+              | LIGHT / FIT
             .dish-ratio
-              | рацион, 1300&nbsp;ккал/день
+              | 1000&nbsp;ккал / 1300 ккал
             
             .dish-dots
               .fit-dot.color  
@@ -95,8 +91,8 @@ block content
               .fit-dot.uncolor  
               .fit-dot.uncolor  
             .dish-description
-              | Включает 2&nbsp;приёма пищи в&nbsp;день.
-              | <br><br> Он&nbsp;для тебя, если&nbsp;ты:
+              | Рационы включают 2&nbsp;приёма пищи в&nbsp;день.
+              | <br><br> Они&nbsp;для тебя, если&nbsp;ты:
             ul.dish-ul
               li
                 | хочешь похудеть; 
@@ -140,7 +136,10 @@ block content
               .card__text-size
                 | КБЖУ:620/27/54/5, 370 гр 
           .links
-            a(href="../src/files/etoketo_racion_fit_menu.pdf" target="_blank") 
+            a(href="../src/files/LIGHT.pdf" target="_blank") 
+              button.order.files
+                | Скачать LIGHT меню 
+            a(href="../src/files/FIT.pdf" target="_blank") 
               button.order.files
                 | Скачать FIT меню  
             a(href="https://etoketo.ru/#category22783") 
@@ -161,9 +160,9 @@ block content
         .dish-left(data-aos="fade-right")
           .dish-declaration
             .dish-title
-              | BALANCE
+              | BASE / BALANCE
             .dish-ratio
-              | рацион, 2000&nbsp;ккал/день
+              | 1500&nbsp;ккал / 2000 ккал
             
             .dish-dots
               .balance-dot.color  
@@ -172,8 +171,8 @@ block content
               .balance-dot.color  
               .balance-dot.uncolor  
             .dish-description
-              | Включает 3&nbsp;приёма пищи в&nbsp;день.
-              | <br><br> Он&nbsp;для тебя, если&nbsp;ты:
+              | Рационы включают 3&nbsp;приёма пищи в&nbsp;день.
+              | <br><br>  Они&nbsp;для тебя, если&nbsp;ты:
             ul.dish-ul
               li
                 | хочешь питаться каждый день 
@@ -200,7 +199,10 @@ block content
               .card__text-size
                 | КБЖУ: 485/16/41/11, 445&nbsp;гр
           .links.mobile-hide
-            a(href="../src/files/etoketo_racion_balance_menu.pdf" target="_blank") 
+            a(href="../src/files/BASE.pdf" target="_blank") 
+              button.order.files
+                | Скачать BASE меню
+            a(href="../src/files/BALANCE.pdf" target="_blank") 
               button.order.files
                 | Скачать BALANCE меню
             a(href="https://etoketo.ru/#category22783") 
@@ -234,7 +236,10 @@ block content
               .card__text-size
                 | КБЖУ: 872/31/69/10, 295&nbsp;гр
           .links.mobile-show
-            a(href="../src/files/etoketo_racion_balance_menu.pdf" target="_blank") 
+            a(href="../src/files/BASE.pdf" target="_blank") 
+              button.order.files
+                | Скачать BASE меню
+            a(href="../src/files/BALANCE.pdf" target="_blank") 
               button.order.files
                 | Скачать BALANCE меню
             a(href="https://etoketo.ru/#category22783") 
@@ -249,106 +254,7 @@ block content
             a.socials-hidden__link(href="https://api.whatsapp.com/send?phone=79818223153")
               img(src="../src/images/wapp-hidden.svg")            
                      
-  section#sport.sport
-    .container
-      .dish-wrapper
-        .dish-left(data-aos="fade-right")
-          .dish-declaration
-            .dish-title
-              | SPORT
-            .dish-ratio
-              | рацион, 2500&nbsp;ккал/день 
-            
-            .dish-dots
-              .sport-dot.color  
-              .sport-dot.color  
-              .sport-dot.color  
-              .sport-dot.color  
-              .sport-dot.color
-            .dish-description
-              | Включает 4&nbsp;приёма пищи в&nbsp;день.
-              | <br><br> Он&nbsp;для тебя, если&nbsp;ты:
-            ul.dish-ul
-              li
-                | активно работаешь над своим телом;
-              li
-                | не&nbsp;считаешь калории, потому что это <br> тебе не&nbsp;нужно;
-              li
-                | думаешь, что десерты&nbsp;&mdash; это <br> неизменный элемент дневного рациона
-            .dayratio 
-              | Пример рациона на&nbsp;1&nbsp;день  
-
-          .dish-card
-            .dish-card__photo
-              img(src="../src/images/dishes/sport_01.png")
-            .dish-card__text
-              .card__text-title
-                | Бургер из&nbsp;мраморной говядины
-              .card__text-description
-                | Говядина мраморная, сыр чеддер, паприка, орегано, лук репчатый красный, чеснок, микс салатов, бекон, огурцы соленые, томаты, сальса, кето-булочка.
-
-              .card__text-size
-                | КБЖУ: 953/47/77/10, 360&nbsp;гр
-
-          .dish-card
-            .dish-card__photo
-              img(src="../src/images/dishes/sport_04.png")
-            .dish-card__text
-              .card__text-title
-                | Чиа пудинг с&nbsp;физалисом и&nbsp;апельсином
-              .card__text-description
-                | Семена чиа, кокосовое молоко, физалис, апельсин, желатин, эритрит, ванилин
-
-              .card__text-size
-                | К214/Б7/Ж15/У5, 210&nbsp;гр
-
-
-                  
-
-        .dish-right(data-aos="fade-left") 
-          .dish-card
-            .dish-card__photo
-              img(src="../src/images/dishes/sport_02.png")
-            .dish-card__text
-              .card__text-title
-                | Скрэмбл по-мексикански
-
-              .card__text-description
-                | Яйца куриные, масло сливочное, лук зеленый, халапеньо, томаты, сыр чеддер
-
-              .card__text-size
-                | КБЖУ: 403/26/30/3, 255&nbsp;гр
-          
-
-          .dish-card
-            .dish-card__photo
-              img(src="../src/images/dishes/sport_03.png")
-            .dish-card__text
-              .card__text-title
-                | Пикантный салат с&nbsp;креветками
-
-              .card__text-description
-                | Креветки королевские, авокадо, огурец свежий, сок лимона, микс салатов, чеснок, масло оливковое, кинза, фундук, имбирь, кайенский перец
-
-              .card__text-size
-                | КБЖУ: 771/25/69/6, 255&nbsp;гр
-
-          .links
-            a(href="../src/files/etoketo_racion_sport_menu.pdf" target="_blank") 
-              button.order.files
-                | Скачать SPORT меню
-            a(href="https://etoketo.ru/#category22783") 
-              button.order
-                | Перейти к&nbsp;заказу
-        .socials-hidden
-          .socials-hidden__title
-            | На&nbsp;любые вопросы ответим в&nbsp;чате:
-          .socials-hidden__icons
-            a.socials-hidden__link(href="https://t-do.ru/EtoKeto")
-              img(src="../src/images/tg-hidden.svg")   
-            a.socials-hidden__link(href="https://api.whatsapp.com/send?phone=79818223153")
-              img(src="../src/images/wapp-hidden.svg")         
-
+  
   section#benefit.futures 
     .container
       .futures-title
@@ -376,54 +282,45 @@ block content
         | Выбери свой рацион
       .choose-card__wrapper
         .card-wrapper
-          .ratio-card.card-fit(data-aos="fade-right")
+          .ratio-card.card-light(data-aos="fade-right")
             .ratio-card__title
-              | FIT
+              | LIGHT
             .ratio-card__subtitle
-              | 1300&nbsp;ккал/день
+              | 1000&nbsp;ккал/день
             <hr>  
             .ratio-card__prise
-              | 700 &#8381
+              | 598 р.
             <hr>
             .ratio-card__description
-              | стоимость дневного рациона при заказе на&nbsp;неделю
+              | за дневной рацион
             .prise-wrapper
               .prise-description
-                | стоимость недельного рациона 
+                | стоимость 6-дневного рациона 
               .prise
-                | 4900 &#8381
-            .prise-wrapper.mute
-              .prise-description
-                | стоимость 3-дневного рациона 
-              .prise
-                | 2400 &#8381 
+                | 3590 р.
+            
           .choose-card_button.mobile-hide        
             a(href="https://etoketo.ru/#category22783") 
               button.order
                 | Перейти к&nbsp;заказу       
 
         .card-wrapper             
-          .ratio-card.card-balance(data-aos="fade")
+          .ratio-card.card-fit(data-aos="fade")
             .ratio-card__title
-              | BALANCE
+              | FIT
             .ratio-card__subtitle
-              | 2000&nbsp;ккал/день
+              | 1300&nbsp;ккал/день
             <hr>  
             .ratio-card__prise
-              | 1000 &#8381
+              | 798 р.
             <hr>
             .ratio-card__description
-              | стоимость дневного рациона при заказе на&nbsp;неделю
+              | за дневной рацион
             .prise-wrapper
               .prise-description
-                | стоимость недельного рациона 
+                | стоимость 6-дневного рациона 
               .prise
-                | 7000 &#8381
-            .prise-wrapper.mute
-              .prise-description
-                | стоимость 3-дневного рациона 
-              .prise
-                | 3600 &#8381
+                | 4790 р.
           .choose-card_button.mobile-hide        
             a(href="https://etoketo.ru/#category22783") 
               button.order
@@ -431,31 +328,50 @@ block content
         
 
         .card-wrapper
-          .ratio-card.card-sport(data-aos="fade-left")
+          .ratio-card.card-base(data-aos="fade-left")
             .ratio-card__title
-              | SPORT
+              | BASE
             .ratio-card__subtitle
-              | 2500&nbsp;ккал/день
+              | 1500&nbsp;ккал/день
             <hr>  
             .ratio-card__prise
-              | 1200 &#8381
+              | 865 р.
             <hr>
             .ratio-card__description
-              | стоимость дневного рациона при заказе на&nbsp;неделю
+              | за дневной рацион
             .prise-wrapper
               .prise-description
-                | стоимость недельного рациона 
+                | стоимость 6-дневного рациона 
               .prise
-                | 8400 &#8381
-            .prise-wrapper.mute
+                | 5190 р.
+          .choose-card_button.mobile-hide        
+            a(href="https://etoketo.ru/#category22783") 
+              button.order
+                | Перейти к&nbsp;заказу       
+          
+        .card-wrapper
+          .ratio-card.card-balance(data-aos="fade-right")
+            .ratio-card__title
+              | BALANCE
+            .ratio-card__subtitle
+              | 2000&nbsp;ккал/день
+            <hr>  
+            .ratio-card__prise
+              | 1098 р.
+            <hr>
+            .ratio-card__description
+              | за дневной рацион
+            .prise-wrapper
               .prise-description
-                | стоимость 3-дневного рациона 
+                | стоимость 6-дневного рациона
               .prise
-                | 4500 &#8381
+                | 6590 р.
           .choose-card_button.down 
             a(href="https://etoketo.ru/#category22783")      
               button.order
-                | Перейти к&nbsp;заказу     
+                | Перейти к&nbsp;заказу 
+     
+            
 
   section#delivery.delivery
     .container
