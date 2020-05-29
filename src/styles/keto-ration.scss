@@ -9,7 +9,7 @@
 }
 
 .keto-item {
-    width: 300px;
+    width: 380px;
     background: #383A39;
     border-radius: 62px;
     padding: 23px 0 19px 0;
@@ -20,23 +20,22 @@
 
 .green:hover {
     border: 1px solid #A2E670;
-    box-shadow: 0 0 34px 0 rgba(162, 230, 112, 0.50);
+    box-shadow: 0 0 34px 0 rgba(162, 230, 112, 0.5);
 }
 
 .orange:hover {
     border: 1px solid #F9C770;
-    box-shadow: 0 0 34px 0 rgba(249, 199, 112, 0.50);
+    box-shadow: 0 0 34px 0 rgba(249, 199, 112, 0.5);
 }
 
 .blue:hover {
     border: 1px solid #4D86FB;
-    box-shadow: 0 0 34px 0 rgba(77, 134, 251, 0.50);
+    box-shadow: 0 0 34px 0 rgba(77, 134, 251, 0.5);
 }
-
 
 .keto-item__title {
     font-family: Montserrat-Bold;
-    font-size: 40px;
+    font-size: 35px;
     letter-spacing: 0;
 }
 
@@ -44,35 +43,34 @@
     font-family: PTSans-Regular;
     font-size: 15px;
     letter-spacing: 0;
+    margin-top: 17px;
 }
 
-@media (max-width: 900px) {
 
-    .keto-item {
-        width: 250px;
-    }
-}
 
 @media (max-width: 768px) {
+    .keto-items {
+        margin-top: 43px;
+    }
+
     .keto-item {
-        width: 220px;
+        margin-top: 40px;
     }
 
     .green {
         border: 1px solid #A2E670;
-        box-shadow: 0 0 34px 0 rgba(162, 230, 112, 0.50);
+        box-shadow: 0 0 34px 0 rgba(162, 230, 112, 0.5);
     }
 
     .orange {
         border: 1px solid #F9C770;
-        box-shadow: 0 0 34px 0 rgba(249, 199, 112, 0.50);
+        box-shadow: 0 0 34px 0 rgba(249, 199, 112, 0.5);
     }
 
     .blue {
         border: 1px solid #4D86FB;
-        box-shadow: 0 0 34px 0 rgba(77, 134, 251, 0.50);
+        box-shadow: 0 0 34px 0 rgba(77, 134, 251, 0.5);
     }
-
 }
 
 @media (max-width: 656px) {
@@ -89,10 +87,10 @@
     }
 }
 
-
 @media (max-width: 428px) {
-    .keto-item__title {
-        font-size: 30px;
-    }
 
+
+    .keto-item__title {
+        font-size: 25px;
+    }
 }
